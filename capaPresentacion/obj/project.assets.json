@@ -533,19 +533,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\samue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaPresentacion\\capaPresentacion.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\source\\repos\\App100tifica\\capaPresentacion\\capaPresentacion.csproj",
       "projectName": "capaPresentacion",
-      "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaPresentacion\\capaPresentacion.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaPresentacion\\obj\\",
+      "projectPath": "C:\\Users\\samue\\source\\repos\\App100tifica\\capaPresentacion\\capaPresentacion.csproj",
+      "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\samue\\source\\repos\\App100tifica\\capaPresentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -559,11 +559,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj"
+            "C:\\Users\\samue\\source\\repos\\App100tifica\\capaEntidad\\capaEntidad.csproj": {
+              "projectPath": "C:\\Users\\samue\\source\\repos\\App100tifica\\capaEntidad\\capaEntidad.csproj"
             },
-            "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaNegocio\\capaNegocio.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaNegocio\\capaNegocio.csproj"
+            "C:\\Users\\samue\\source\\repos\\App100tifica\\capaNegocio\\capaNegocio.csproj": {
+              "projectPath": "C:\\Users\\samue\\source\\repos\\App100tifica\\capaNegocio\\capaNegocio.csproj"
             }
           }
         }

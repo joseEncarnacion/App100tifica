@@ -10,3 +10,15 @@ C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\ca
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaEntidad\obj\Debug\net6.0-windows\refint\capaEntidad.dll
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.pdb
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaEntidad\obj\Debug\net6.0-windows\ref\capaEntidad.dll
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\bin\Debug\net6.0-windows\capaEntidad.deps.json
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\bin\Debug\net6.0-windows\capaEntidad.dll
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\bin\Debug\net6.0-windows\capaEntidad.pdb
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.csproj.AssemblyReference.cache
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.AssemblyInfoInputs.cache
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.AssemblyInfo.cs
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.dll
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\refint\capaEntidad.dll
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\capaEntidad.pdb
+C:\Users\samue\Source\Repos\App100tifica\capaEntidad\obj\Debug\net6.0-windows\ref\capaEntidad.dll

@@ -12,7 +12,7 @@ namespace capaDatos
             new SqlConnection(ConfigurationManager.ConnectionStrings["dataConnex"].ConnectionString);
 
 
-
+        //Listar Registro
         public DataTable Datos_Listar()
         {
             SqlCommand cmd = new SqlCommand("sp_listar", conn);
@@ -23,6 +23,8 @@ namespace capaDatos
             return dt;
         }
 
+
+        //Insertar registro
         public void Datos_insertarEstudiante(CEestudiante est)
         {
             SqlCommand cmd = new SqlCommand("sp_insertarEstudinte", conn);
@@ -36,8 +38,22 @@ namespace capaDatos
             conn.Close();
         }
 
+        //Eliminar registro en la base de datos
+        public void Datos_Eliminar(int id)
+        {
+            SqlCommand cmd = new SqlCommand("sp_elimiarEstudiante", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@idest", id);
+            if(conn.State==ConnectionState.Open) conn.Close();
+            conn.Open() ;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+
     }
 
 
-   
+
 }

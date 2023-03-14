@@ -23,7 +23,7 @@ namespace capaPresentacion
         //Limpiar los inputs
         private void limpiar()
         {
-            textCarrera.Text = string.Empty;
+            //textCarrera.Text = string.Empty;
             textMatricula.Text = string.Empty;
             textNombre.Text = string.Empty;
         }
@@ -65,7 +65,7 @@ namespace capaPresentacion
             //estudiantes.idEstudiante= text;
             estudiantes.Matricula= textMatricula.Text;
             estudiantes.nombreE = textNombre.Text;
-            estudiantes.carreraID = int.Parse(textCarrera.Text);
+            //estudiantes.carreraID = int.Parse(textCarrera.Text);
 
             resultado = negocionEstudiante.validarDatosEstudiante(estudiantes);
            

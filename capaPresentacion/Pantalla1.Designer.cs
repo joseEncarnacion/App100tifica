@@ -37,13 +37,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textNombre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textCarrera = new System.Windows.Forms.TextBox();
             this.btnIniciar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.cBoxCarrera = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
@@ -142,18 +142,6 @@
             this.label4.Text = "Carrera";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textCarrera
-            // 
-            this.textCarrera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textCarrera.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textCarrera.Location = new System.Drawing.Point(345, 714);
-            this.textCarrera.Name = "textCarrera";
-            this.textCarrera.Size = new System.Drawing.Size(556, 50);
-            this.textCarrera.TabIndex = 7;
-            this.textCarrera.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // btnIniciar
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -228,12 +216,29 @@
             this.label7.Size = new System.Drawing.Size(552, 279);
             this.label7.TabIndex = 14;
             // 
+            // cBoxCarrera
+            // 
+            this.cBoxCarrera.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cBoxCarrera.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cBoxCarrera.FormattingEnabled = true;
+            this.cBoxCarrera.Items.AddRange(new object[] {
+            "Software",
+            "Multimedia",
+            "Mecatronica"});
+            this.cBoxCarrera.Location = new System.Drawing.Point(346, 711);
+            this.cBoxCarrera.Name = "cBoxCarrera";
+            this.cBoxCarrera.Size = new System.Drawing.Size(555, 36);
+            this.cBoxCarrera.TabIndex = 15;
+            // 
             // Pantalla1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1422, 977);
+            this.Controls.Add(this.cBoxCarrera);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLimpiar);
@@ -241,7 +246,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnIniciar);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textCarrera);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textNombre);
             this.Controls.Add(this.text_nom);
@@ -267,12 +271,12 @@
         private Label label3;
         private TextBox textNombre;
         private Label label4;
-        private TextBox textCarrera;
         private Button btnIniciar;
         private Label label5;
         private Button btnLimpiar;
         private Button button1;
         private Label label6;
         private Label label7;
+        private ComboBox cBoxCarrera;
     }
 }

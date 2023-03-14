@@ -47,7 +47,6 @@ namespace capaNegocio
         {
             datoEstudiante.Datos_insertarEstudiante(est);
 
-
         }
 
     }

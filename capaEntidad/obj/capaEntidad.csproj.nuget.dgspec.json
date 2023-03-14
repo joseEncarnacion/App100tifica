@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\capaEntidad.csproj": {}
+    "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\capaEntidad.csproj": {
+    "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\capaEntidad.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj",
         "projectName": "capaEntidad",
-        "projectPath": "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\capaEntidad.csproj",
-        "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -511,19 +511,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\samue\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaNegocio\\capaNegocio.csproj",
+      "projectUniqueName": "C:\\Users\\samue\\Source\\Repos\\App\\capaNegocio\\capaNegocio.csproj",
       "projectName": "capaNegocio",
-      "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaNegocio\\capaNegocio.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaNegocio\\obj\\",
+      "projectPath": "C:\\Users\\samue\\Source\\Repos\\App\\capaNegocio\\capaNegocio.csproj",
+      "packagesPath": "C:\\Users\\samue\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\samue\\Source\\Repos\\App\\capaNegocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\samue\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -537,11 +537,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaDatos\\capaDatos.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaDatos\\capaDatos.csproj"
+            "C:\\Users\\samue\\Source\\Repos\\App\\capaDatos\\capaDatos.csproj": {
+              "projectPath": "C:\\Users\\samue\\Source\\Repos\\App\\capaDatos\\capaDatos.csproj"
             },
-            "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj": {
-              "projectPath": "C:\\Users\\Usuario\\Pictures\\PROYECTOS\\BackEnd\\App-school-100tifica\\App100Tifica\\capaEntidad\\capaEntidad.csproj"
+            "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\capaEntidad.csproj": {
+              "projectPath": "C:\\Users\\samue\\Source\\Repos\\App\\capaEntidad\\capaEntidad.csproj"
             }
           }
         }

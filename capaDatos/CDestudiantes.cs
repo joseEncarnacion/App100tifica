@@ -35,7 +35,26 @@ namespace capaDatos
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+        public void Seleccionador()
+        {
+            Random random = new Random();
+            int max_id = 10; 
+            int random_id = random.Next(1, max_id + 1);
 
+            Conection.open();
+            command.Parameters.AddWithValue("@id", random_id);
+            command.Parameters.AddWithValue("@nivel", "basico");
+
+            if (reader.Read())
+            {
+                string algoritmo = reader.GetString(0);
+                Console.WriteLine(algoritmo); // o reemplaza por tu método para presentar el algoritmo en pantalla
+            }
+            else
+            {
+                Console.WriteLine("No se encontró ningún algoritmo con el ID y nivel especificados");
+
+            }
     }
 
 

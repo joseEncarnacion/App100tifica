@@ -113,9 +113,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(345, 565);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 28);
+            this.label3.Size = new System.Drawing.Size(184, 28);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Nombre y apellido";
+            this.label3.Text = "Nombre completo";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textNombre
@@ -150,7 +150,7 @@
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(175, 47);
             this.btnIniciar.TabIndex = 9;
-            this.btnIniciar.Text = "Iniciar Reto";
+            this.btnIniciar.Text = "Registrarme";
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 

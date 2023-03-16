@@ -8,5 +8,7 @@ namespace capaEntidad
 {
     internal class CEalgoritmo
     {
+
+        //Definir atributos de la base de dato para la tabla algoritmo
     }
 }

@@ -31,9 +31,15 @@ namespace capaPresentacion
             dataGridView1.DataSource = dt;
 
             int g = dt.Rows.Count;
-            
 
-            MessageBox.Show(g.ToString());
+           // logica para obtener un dato de una fila 
+            var datico =
+                dt.Rows[0]["problema"];
+
+           
+        
+            // MessageBox.Show(g.ToString());
+            MessageBox.Show(datico.ToString());
         }
 
         private void PantallaMantEstudiantes_Load(object sender, EventArgs e)

@@ -30,7 +30,7 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_basico = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_intermedio = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -52,15 +52,16 @@
             this.btn_basico.Size = new System.Drawing.Size(294, 250);
             this.btn_basico.TabIndex = 1;
             this.btn_basico.UseVisualStyleBackColor = true;
+            this.btn_basico.Click += new System.EventHandler(this.btn_basico_Click);
             // 
-            // button1
+            // btn_intermedio
             // 
-            this.button1.Image = global::capaPresentacion.Properties.Resources.btnIntermedio;
-            this.button1.Location = new System.Drawing.Point(751, 547);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(294, 250);
-            this.button1.TabIndex = 2;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_intermedio.Image = global::capaPresentacion.Properties.Resources.btnIntermedio;
+            this.btn_intermedio.Location = new System.Drawing.Point(751, 547);
+            this.btn_intermedio.Name = "btn_intermedio";
+            this.btn_intermedio.Size = new System.Drawing.Size(294, 250);
+            this.btn_intermedio.TabIndex = 2;
+            this.btn_intermedio.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -94,7 +95,7 @@
             this.ClientSize = new System.Drawing.Size(1422, 977);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_intermedio);
             this.Controls.Add(this.btn_basico);
             this.Controls.Add(this.panel1);
             this.Name = "PantallaRandom";
@@ -108,7 +109,7 @@
 
         private Panel panel1;
         private Button btn_basico;
-        private Button button1;
+        private Button btn_intermedio;
         private Label label1;
         private Label label2;
     }

@@ -44,6 +44,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.cBoxCarrera = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textpassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -89,10 +91,10 @@
             this.textMatricula.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textMatricula.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textMatricula.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textMatricula.Location = new System.Drawing.Point(345, 504);
             this.textMatricula.Name = "textMatricula";
-            this.textMatricula.Size = new System.Drawing.Size(556, 50);
+            this.textMatricula.Size = new System.Drawing.Size(556, 41);
             this.textMatricula.TabIndex = 3;
             // 
             // text_nom
@@ -111,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(345, 565);
+            this.label3.Location = new System.Drawing.Point(345, 560);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 28);
             this.label3.TabIndex = 6;
@@ -123,10 +125,10 @@
             this.textNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textNombre.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textNombre.Location = new System.Drawing.Point(345, 609);
+            this.textNombre.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textNombre.Location = new System.Drawing.Point(345, 604);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(556, 50);
+            this.textNombre.Size = new System.Drawing.Size(556, 41);
             this.textNombre.TabIndex = 5;
             this.textNombre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -135,7 +137,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(345, 670);
+            this.label4.Location = new System.Drawing.Point(345, 663);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 28);
             this.label4.TabIndex = 8;
@@ -146,7 +148,7 @@
             // 
             this.btnIniciar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnIniciar.Location = new System.Drawing.Point(346, 796);
+            this.btnIniciar.Location = new System.Drawing.Point(349, 860);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(175, 47);
             this.btnIniciar.TabIndex = 9;
@@ -168,7 +170,7 @@
             // 
             this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLimpiar.Location = new System.Drawing.Point(537, 796);
+            this.btnLimpiar.Location = new System.Drawing.Point(540, 860);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(175, 47);
             this.btnLimpiar.TabIndex = 11;
@@ -227,10 +229,32 @@
             "Software",
             "Multimedia",
             "Mecatronica"});
-            this.cBoxCarrera.Location = new System.Drawing.Point(346, 711);
+            this.cBoxCarrera.Location = new System.Drawing.Point(346, 704);
             this.cBoxCarrera.Name = "cBoxCarrera";
             this.cBoxCarrera.Size = new System.Drawing.Size(555, 36);
             this.cBoxCarrera.TabIndex = 15;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(345, 753);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(101, 28);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Password";
+            // 
+            // textpassword
+            // 
+            this.textpassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textpassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textpassword.Location = new System.Drawing.Point(345, 797);
+            this.textpassword.Name = "textpassword";
+            this.textpassword.Size = new System.Drawing.Size(556, 34);
+            this.textpassword.TabIndex = 16;
             // 
             // Pantalla1
             // 
@@ -238,6 +262,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1422, 977);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textpassword);
             this.Controls.Add(this.cBoxCarrera);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
@@ -278,5 +304,7 @@
         private Label label6;
         private Label label7;
         private ComboBox cBoxCarrera;
+        private Label label8;
+        private TextBox textpassword;
     }
 }

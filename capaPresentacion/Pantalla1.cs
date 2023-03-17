@@ -8,7 +8,7 @@ namespace capaPresentacion
         public Pantalla1()
         {
             InitializeComponent();
-            estudiantes.carreraID = 0;
+          
         }
 
         //objeto de la clase Entidad estudiante
@@ -23,9 +23,10 @@ namespace capaPresentacion
         //Limpiar los inputs
         private void limpiar()
         {
-            //textCarrera.Text = string.Empty;
+            cBoxCarrera.Text = string.Empty;
             textMatricula.Text = string.Empty;
             textNombre.Text = string.Empty;
+            textpassword.Text = string.Empty;   
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -65,7 +66,8 @@ namespace capaPresentacion
             //estudiantes.idEstudiante= text;
             estudiantes.Matricula= textMatricula.Text;
             estudiantes.nombreE = textNombre.Text;
-            //estudiantes.carreraID = int.Parse(textCarrera.Text);
+            estudiantes.carreraID = cBoxCarrera.Text;
+            estudiantes.password = textpassword.Text;
 
             resultado = negocionEstudiante.validarDatosEstudiante(estudiantes);
            

@@ -12,7 +12,8 @@ namespace capaEntidad
         public int idEstudiante { get; set; }
         public string Matricula { get; set; }
         public string nombreE { get; set; }
-        public int carreraID { get; set; }
+        public string carreraID { get; set; }
+        public string password { get; set; }
 
 
     }

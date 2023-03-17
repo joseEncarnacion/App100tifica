@@ -80,12 +80,18 @@ namespace capaPresentacion
 
             MessageBox.Show("Registrado Satisfactorio");
 
+
             limpiar();
             
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
+            CNalgoritmo prueba = new CNalgoritmo();
+
+
+            //MessageBox.Show();
+
             limpiar();
         }
     }

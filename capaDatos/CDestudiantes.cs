@@ -65,6 +65,7 @@ namespace capaDatos
             conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
+
         }
 
 

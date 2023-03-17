@@ -27,7 +27,8 @@ namespace capaPresentacion
         public void listarEstudiante()
         {
             // DataTable dt = negocioEstudiante.NEstudiante_listado();
-            DataTable dt = algoritmo.CN_countAlgoritmo();
+           // DataTable dt = algoritmo.CN_countAlgoritmo();
+            DataTable dt = algoritmo.CN_buscarAlgoritmoBasico(2);
             dataGridView1.DataSource = dt;
 
             int g = dt.Rows.Count;

@@ -38,7 +38,7 @@ namespace capaNegocio
             Random generarAleatorio= new Random();
             int numeroAleatorio = 0;
 
-            numeroAleatorio = generarAleatorio.Next(1, CantidadAlgoritmo);
+            numeroAleatorio = generarAleatorio.Next(1, CantidadAlgoritmo+1);
 
             return numeroAleatorio;
 

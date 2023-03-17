@@ -25,6 +25,10 @@ namespace capaPresentacion
             var busqueda = AlgoritmoNegocio.CN_countAlgoritmo();
             int id= AlgoritmoNegocio.BuscarAlgoritmoRamdom(busqueda);
 
+            DataTable dt =AlgoritmoNegocio.CN_buscarAlgoritmoBasico(id);
+            var algoritmoSeleccionado = dt.Rows[0]["problema"];
+            MessageBox.Show(id.ToString());
+            MessageBox.Show(algoritmoSeleccionado.ToString());
 
         }
     }

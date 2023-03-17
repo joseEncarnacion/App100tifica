@@ -26,9 +26,16 @@ namespace capaNegocio
                 resultado= false;
             }
 
-           if(estudiante.carreraID <= 0) {
+            if (estudiante.carreraID == string.Empty)
+            {
                 MessageBox.Show("Debe Elegir almenos una carrera");
-                resultado= false;
+                resultado = false;
+            }
+
+            if (estudiante.password == string.Empty)
+            {
+                MessageBox.Show("El Password es obligatorio");
+                resultado = false;
             }
 
             return resultado;
@@ -47,6 +54,11 @@ namespace capaNegocio
         {
             datoEstudiante.Datos_insertarEstudiante(est);
 
+        }
+
+        public void Neestudiante_editar(CEestudiante est) {
+
+            datoEstudiante.ActualizarDatos(est);
         }
 
     }

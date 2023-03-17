@@ -27,11 +27,12 @@ namespace capaDatos
         //Insertar registro
         public void Datos_insertarEstudiante(CEestudiante est)
         {
-            SqlCommand cmd = new SqlCommand("sp_insertarEstudinte", conn);
+            SqlCommand cmd = new SqlCommand("SP_INSERTAREst", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@mat", est.Matricula);
             cmd.Parameters.AddWithValue("@nom", est.nombreE);
             cmd.Parameters.AddWithValue("@carrer", est.carreraID);
+            cmd.Parameters.AddWithValue("@passw", est.password);
             if(conn.State == ConnectionState.Open) conn.Close();
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -46,6 +47,22 @@ namespace capaDatos
             cmd.Parameters.AddWithValue("@idest", id);
             if(conn.State==ConnectionState.Open) conn.Close();
             conn.Open() ;
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
+
+
+        //Actualizar resgistro 
+        public void ActualizarDatos(CEestudiante est)
+        {
+            SqlCommand cmd = new SqlCommand("SP_EditarEst", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@mat", est.Matricula);
+            cmd.Parameters.AddWithValue("@nom", est.nombreE);
+            cmd.Parameters.AddWithValue("@carrer", est.carreraID);
+            cmd.Parameters.AddWithValue("@passw", est.password);
+            if (conn.State == ConnectionState.Open) conn.Close();
+            conn.Open();
             cmd.ExecuteNonQuery();
             conn.Close();
         }

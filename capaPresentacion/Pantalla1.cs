@@ -1,6 +1,8 @@
 using capaEntidad;
 using capaNegocio;
 
+
+
 namespace capaPresentacion
 {
     public partial class Pantalla1 : Form
@@ -40,12 +42,12 @@ namespace capaPresentacion
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -15,6 +15,7 @@ C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\ca
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaNegocio\obj\Debug\net6.0-windows\refint\capaNegocio.dll
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.pdb
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaNegocio\obj\Debug\net6.0-windows\ref\capaNegocio.dll
+<<<<<<< HEAD
 C:\Users\samue\Source\Repos\App100tifica\capaNegocio\bin\Debug\net6.0-windows\capaNegocio.deps.json
 C:\Users\samue\Source\Repos\App100tifica\capaNegocio\bin\Debug\net6.0-windows\capaNegocio.dll
 C:\Users\samue\Source\Repos\App100tifica\capaNegocio\bin\Debug\net6.0-windows\capaNegocio.pdb
@@ -32,3 +33,22 @@ C:\Users\samue\Source\Repos\App100tifica\capaNegocio\obj\Debug\net6.0-windows\ca
 C:\Users\samue\Source\Repos\App100tifica\capaNegocio\obj\Debug\net6.0-windows\refint\capaNegocio.dll
 C:\Users\samue\Source\Repos\App100tifica\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.pdb
 C:\Users\samue\Source\Repos\App100tifica\capaNegocio\obj\Debug\net6.0-windows\ref\capaNegocio.dll
+=======
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaNegocio.deps.json
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaNegocio.dll
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaNegocio.pdb
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaDatos.dll
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaEntidad.dll
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaDatos.pdb
+C:\Users\samue\Source\Repos\App\capaNegocio\bin\Debug\net6.0-windows\capaEntidad.pdb
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.csproj.AssemblyReference.cache
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.AssemblyInfoInputs.cache
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.AssemblyInfo.cs
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.csproj.CopyComplete
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.dll
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\refint\capaNegocio.dll
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\capaNegocio.pdb
+C:\Users\samue\Source\Repos\App\capaNegocio\obj\Debug\net6.0-windows\ref\capaNegocio.dll
+>>>>>>> 4a5f2407106507c840371ede034f753dfd68d649

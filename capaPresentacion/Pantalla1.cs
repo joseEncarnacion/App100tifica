@@ -8,14 +8,14 @@ namespace capaPresentacion
         public Pantalla1()
         {
             InitializeComponent();
-          
+
         }
 
         //objeto de la clase Entidad estudiante
         CEestudiante estudiantes = new CEestudiante();
 
         // objeto de la capa Negocio 
-        CNestudiantes negocionEstudiante= new CNestudiantes();
+        CNestudiantes negocionEstudiante = new CNestudiantes();
 
         // Metodos para el control de la aplicacion 
 
@@ -26,7 +26,7 @@ namespace capaPresentacion
             cBoxCarrera.Text = string.Empty;
             textMatricula.Text = string.Empty;
             textNombre.Text = string.Empty;
-            textpassword.Text = string.Empty;   
+            textpassword.Text = string.Empty;
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace capaPresentacion
         {
 
         }
-        
+
 
         //Boton para registrar estudiante
         private void btnIniciar_Click(object sender, EventArgs e)
@@ -61,21 +61,21 @@ namespace capaPresentacion
             //datos de los input
             //
             bool resultado;
-            
+
 
             //estudiantes.idEstudiante= text;
-            estudiantes.Matricula= textMatricula.Text;
+            estudiantes.Matricula = textMatricula.Text;
             estudiantes.nombreE = textNombre.Text;
             estudiantes.carreraID = cBoxCarrera.Text;
             estudiantes.password = textpassword.Text;
 
             resultado = negocionEstudiante.validarDatosEstudiante(estudiantes);
-           
-            if(resultado == false)
+
+            if (resultado == false)
             {
                 return;
             }
-            
+
             negocionEstudiante.NEstudiante_insertar(estudiantes);
 
             MessageBox.Show("Registrado Satisfactorio");
@@ -85,13 +85,23 @@ namespace capaPresentacion
             p1.Show();
 
             limpiar();
-            
+
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-          
+
             limpiar();
+        }
+
+        private void textMatricula_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cBoxCarrera_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

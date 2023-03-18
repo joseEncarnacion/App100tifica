@@ -1,29 +1,30 @@
 ﻿using capaEntidad;
 using capaDatos;
 using System.Data;
+using System.Text.RegularExpressions;
 
 namespace capaNegocio
 {
-    public class CNestudiantes
+    public class CNestudiantes 
     {
         // objeto de la capa datos
         CDestudiantes datoEstudiante = new CDestudiantes();
-       
-
+        
         public bool validarDatosEstudiante(CEestudiante estudiante)
         {
             bool resultado = true;
 
-            if(estudiante.Matricula == string.Empty)  // ""
+            //Valida que los campos no esten vacios.
+            if (estudiante.Matricula == string.Empty)  // ""
             {
                 MessageBox.Show("Matricula Obligatoria");
-                resultado= false;
+                resultado = false;
             }
 
-            if(estudiante.nombreE == string.Empty)
+            if (estudiante.nombreE == string.Empty)
             {
                 MessageBox.Show("El nombre es obligatorio");
-                resultado= false;
+                resultado = false;
             }
 
             if (estudiante.carreraID == string.Empty)
@@ -37,10 +38,44 @@ namespace capaNegocio
                 MessageBox.Show("El Password es obligatorio");
                 resultado = false;
             }
+            // Validar que los campos Nombres y carrera sea solos letras
 
+            if (!estudiante.nombreE.All(c => char.IsLetter(c)))
+            {
+                MessageBox.Show("El nombre solo puede contener letras");
+                resultado = false;
+            }
+            if (!estudiante.carreraID.All(c => char.IsLetter(c)))
+            {
+                MessageBox.Show("La carrera solo puede contener letras");
+                resultado = false;
+            }
+
+            //Validacion de que la matricula solo tenga numeros y que no pase de 8.
+
+            if (Regex.IsMatch(estudiante.Matricula, @"^[0-9]+$"))
+            {
+                // La matrícula solo contiene números
+            }
+            else
+            {
+                MessageBox.Show("La matrícula debe contener solo números");
+                resultado = false;
+            }
+
+            if (Regex.IsMatch(estudiante.Matricula, @"^[0-9]{8}$"))
+            {
+                // La matrícula contiene exactamente 8 números
+            }
+            else
+            {
+                MessageBox.Show("La matrícula debe tener 8 digitos");
+                resultado = false;
+            }
+            
             return resultado;
-        }
 
+        }
 
 
         //crud 

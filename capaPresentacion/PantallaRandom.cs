@@ -27,8 +27,18 @@ namespace capaPresentacion
 
             DataTable dt =AlgoritmoNegocio.CN_buscarAlgoritmoBasico(id);
             var algoritmoSeleccionado = dt.Rows[0]["problema"];
-            MessageBox.Show(id.ToString());
+           // MessageBox.Show(id.ToString());
             MessageBox.Show(algoritmoSeleccionado.ToString());
+
+            string resuldato = algoritmoSeleccionado.ToString();
+
+            AlgoritmoNegocio.CN_ResultadoAlgoritmoMostrar(resuldato);
+
+            //Enviar a la pantalla de resultado
+            Resultado p_Resultado = new Resultado();
+            this.Close();
+            p_Resultado.Show();
+            
 
         }
     }

@@ -16,5 +16,12 @@ namespace capaPresentacion
         {
             InitializeComponent();
         }
+
+        private void Resultado_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

@@ -80,6 +80,9 @@ namespace capaPresentacion
 
             MessageBox.Show("Registrado Satisfactorio");
 
+            this.Hide();
+            PantallaRandom p1 = new PantallaRandom();
+            p1.Show();
 
             limpiar();
             
@@ -87,11 +90,7 @@ namespace capaPresentacion
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            CNalgoritmo prueba = new CNalgoritmo();
-
-
-            //MessageBox.Show();
-
+          
             limpiar();
         }
     }

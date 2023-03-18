@@ -28,6 +28,16 @@ namespace capaNegocio
          *  
          */
 
+        //metodo que al hacer clic en basico o intermedio toma el dato para
+        //mostarlo en la pantalla de resultado
+        public string CN_ResultadoAlgoritmoMostrar(string dato)
+        {
+            string respuesta = dato;
+
+            return respuesta;
+        }
+
+
         //reutilizacion del metodo para pasarle un datatable por parametros
         public int BuscarAlgoritmoRamdom(DataTable dt)
         {

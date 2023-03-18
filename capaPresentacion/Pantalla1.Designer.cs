@@ -279,6 +279,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(1440, 1024);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1440, 1024);
             this.Name = "Pantalla1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "App - Aprende a Programar Practicando - ITLA";

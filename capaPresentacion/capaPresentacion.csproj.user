@@ -16,5 +16,8 @@
     <Compile Update="Resultado.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ScreemPincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

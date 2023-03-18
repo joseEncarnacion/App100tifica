@@ -34,3 +34,4 @@ C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\ca
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaPresentacion\obj\Debug\net6.0-windows\capaPresentacion.Login.resources
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaPresentacion\obj\Debug\net6.0-windows\capaPresentacion.PantallaRandom.resources
 C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaPresentacion\obj\Debug\net6.0-windows\capaPresentacion.Resultado.resources
+C:\Users\Usuario\Pictures\PROYECTOS\BackEnd\App-school-100tifica\App100Tifica\capaPresentacion\obj\Debug\net6.0-windows\capaPresentacion.ScreemPincipal.resources

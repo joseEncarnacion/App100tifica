@@ -1,4 +1,5 @@
-﻿using System;
+﻿using capaNegocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +18,17 @@ namespace capaPresentacion
             InitializeComponent();
         }
 
+        CNalgoritmo AlgoritmoNegocio = new CNalgoritmo();
+
         private void Resultado_Load(object sender, EventArgs e)
         {
+
+            
+            AlgoritmoNegocio.algoritmoBasico();
+
+            txt_NombreUsuario.Text = AlgoritmoNegocio.nombreUsuario;
+            txt_Problema.Text = AlgoritmoNegocio.AlgoritmoRandomSelected;
+
 
         }
 

@@ -16,6 +16,7 @@ namespace capaPresentacion
 
         // objeto de la capa Negocio 
         CNestudiantes negocionEstudiante= new CNestudiantes();
+        CNalgoritmo NegocioAlgoritmo = new CNalgoritmo();
 
         // Metodos para el control de la aplicacion 
 
@@ -68,6 +69,7 @@ namespace capaPresentacion
             estudiantes.nombreE = textNombre.Text;
             estudiantes.carreraID = cBoxCarrera.Text;
             estudiantes.password = textpassword.Text;
+            
 
             resultado = negocionEstudiante.validarDatosEstudiante(estudiantes);
            
@@ -78,12 +80,17 @@ namespace capaPresentacion
             
             negocionEstudiante.NEstudiante_insertar(estudiantes);
 
-            MessageBox.Show("Registrado Satisfactorio");
+            //Captar el nombre del estudiante loguado
+            NegocioAlgoritmo.nombreUsuario = estudiantes.nombreE;
 
-            this.Hide();
+
+            MessageBox.Show("Enhorabuena! Registrado Satisfactorio");
+
+            
             PantallaRandom p1 = new PantallaRandom();
             p1.Show();
 
+            this.Hide();
             limpiar();
             
         }

@@ -16,6 +16,15 @@ namespace capaNegocio
 
         CDalgoritmo algoritmosRef = new CDalgoritmo();
 
+        // 1 = basico, 2 = intermendio
+        public int nivelDificulta { get; set; }
+        //id selecionadel random
+        public string AlgoritmoRandomSelected;
+        //persistencia del nombre quien hace el algoritmo
+        public string nombreUsuario { get; set; }
+
+
+
         // validaciones para insertar algoritmos
 
 
@@ -35,6 +44,26 @@ namespace capaNegocio
             string respuesta = dato;
 
             return respuesta;
+        }
+
+        public void algoritmoBasico()
+        {
+            // variabble busqueda /> Aqui se llena el DataTable para tener el total de filas que 
+            //tiene nuestra tabla
+            var busqueda = CN_countAlgoritmo();
+            // a traves del metodo buscaralgoritmo seleccionamos un id de la tabla 
+            //lo introducimos en una variable
+            int id = BuscarAlgoritmoRamdom(busqueda);
+
+            //creamos nuestro objeto dt e insertamos el objeto obtenido de nuestra db
+            DataTable dt = CN_buscarAlgoritmoBasico(id);
+            //acedemos a nuestro atributo Row si primer elemento y le decimos que 
+            //queremos leer la [columna] problema
+            var algoritmoSeleccionado = dt.Rows[0]["problema"];
+            // MessageBox.Show(id.ToString());
+            MessageBox.Show(algoritmoSeleccionado.ToString());
+
+            AlgoritmoRandomSelected = algoritmoSeleccionado.ToString();
         }
 
 

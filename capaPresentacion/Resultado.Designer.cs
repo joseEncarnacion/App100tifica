@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_Problema = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnTerminar = new System.Windows.Forms.Button();
             this.btnSolicitarTiempo = new System.Windows.Forms.Button();
             this.text_CountDown = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_Problema = new System.Windows.Forms.Label();
+            this.txt_NombreUsuario = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +47,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(850, 188);
             this.panel1.TabIndex = 0;
+            // 
+            // txt_Problema
+            // 
+            this.txt_Problema.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_Problema.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_Problema.Location = new System.Drawing.Point(32, 20);
+            this.txt_Problema.Name = "txt_Problema";
+            this.txt_Problema.Size = new System.Drawing.Size(788, 149);
+            this.txt_Problema.TabIndex = 0;
+            this.txt_Problema.Text = "l";
+            this.txt_Problema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -103,15 +115,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Tiempo Restante:";
             // 
-            // txt_Problema
+            // txt_NombreUsuario
             // 
-            this.txt_Problema.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Problema.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_Problema.Location = new System.Drawing.Point(32, 20);
-            this.txt_Problema.Name = "txt_Problema";
-            this.txt_Problema.Size = new System.Drawing.Size(788, 149);
-            this.txt_Problema.TabIndex = 0;
-            this.txt_Problema.Text = "l";
+            this.txt_NombreUsuario.AutoSize = true;
+            this.txt_NombreUsuario.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txt_NombreUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txt_NombreUsuario.Location = new System.Drawing.Point(758, 136);
+            this.txt_NombreUsuario.Name = "txt_NombreUsuario";
+            this.txt_NombreUsuario.Size = new System.Drawing.Size(19, 30);
+            this.txt_NombreUsuario.TabIndex = 6;
+            this.txt_NombreUsuario.Text = ".";
             // 
             // Resultado
             // 
@@ -119,6 +132,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1422, 977);
+            this.Controls.Add(this.txt_NombreUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.text_CountDown);
             this.Controls.Add(this.btnSolicitarTiempo);
@@ -127,6 +141,7 @@
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Resultado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Resultado";
             this.Load += new System.EventHandler(this.Resultado_Load);
             this.panel1.ResumeLayout(false);
@@ -144,5 +159,6 @@
         private Label txt_Problema;
         private Label text_CountDown;
         private Label label3;
+        private Label txt_NombreUsuario;
     }
 }

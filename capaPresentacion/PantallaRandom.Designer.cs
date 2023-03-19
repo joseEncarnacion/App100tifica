@@ -99,6 +99,7 @@
             this.Controls.Add(this.btn_basico);
             this.Controls.Add(this.panel1);
             this.Name = "PantallaRandom";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

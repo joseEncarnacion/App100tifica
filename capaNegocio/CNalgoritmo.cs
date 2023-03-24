@@ -26,7 +26,24 @@ namespace capaNegocio
 
 
         // validaciones para insertar algoritmos
+        public bool validarAlgortimoB(CEalgoritmo e)
+        {
+            bool respond = true;
 
+            if(e.titulo == string.Empty)
+            {
+                MessageBox.Show("Debe incluir un titulo");
+                respond = false;
+            }
+
+            if (e.problema == string.Empty)
+            {
+                MessageBox.Show("Debe incluir un problema");
+                respond = false;
+            }
+
+            return respond;
+        }
 
         //logica para seleccion aleatoria de algoritmo
 
@@ -55,15 +72,30 @@ namespace capaNegocio
             //lo introducimos en una variable
             int id = BuscarAlgoritmoRamdom(busqueda);
 
+            MessageBox.Show(id.ToString());
+            if (id>0)
+            {
+                DataTable dt = CN_buscarAlgoritmoBasico(id); 
+                var algoritmoSeleccionado = dt.Rows[0]["problema"];
+                AlgoritmoRandomSelected = algoritmoSeleccionado.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Fallo");
+            }
             //creamos nuestro objeto dt e insertamos el objeto obtenido de nuestra db
-            DataTable dt = CN_buscarAlgoritmoBasico(id);
+            
+            //DataTable dt = CN_buscarAlgoritmoBasico(id);
+           
             //acedemos a nuestro atributo Row si primer elemento y le decimos que 
             //queremos leer la [columna] problema
-            var algoritmoSeleccionado = dt.Rows[0]["problema"];
+            
+            //var algoritmoSeleccionado = dt.Rows[0]["problema"];
+           
             // MessageBox.Show(id.ToString());
-            MessageBox.Show(algoritmoSeleccionado.ToString());
+           // MessageBox.Show(algoritmoSeleccionado.ToString());
 
-            AlgoritmoRandomSelected = algoritmoSeleccionado.ToString();
+            //AlgoritmoRandomSelected = algoritmoSeleccionado.ToString();
         }
 
 

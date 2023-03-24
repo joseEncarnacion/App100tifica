@@ -63,6 +63,26 @@ namespace capaPresentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AppArte__1_ {
+            get {
+                object obj = ResourceManager.GetObject("AppArte (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AppArte__2_ {
+            get {
+                object obj = ResourceManager.GetObject("AppArte (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnBasico {
             get {
                 object obj = ResourceManager.GetObject("btnBasico", resourceCulture);
@@ -86,6 +106,26 @@ namespace capaPresentacion.Properties {
         internal static System.Drawing.Bitmap Group_2__1_ {
             get {
                 object obj = ResourceManager.GetObject("Group 2 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Group_2__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Group 2 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_8 {
+            get {
+                object obj = ResourceManager.GetObject("image 8", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

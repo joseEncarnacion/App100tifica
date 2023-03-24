@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_regresarP1 = new System.Windows.Forms.Button();
@@ -41,14 +43,6 @@
             this.textUser = new System.Windows.Forms.TextBox();
             this.panelAdmin1 = new System.Windows.Forms.Panel();
             this.panelMantAlgtBasico = new System.Windows.Forms.Panel();
-            this.panelalgtIntermedio = new System.Windows.Forms.Panel();
-            this.dataGintermedio = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnIntermedioGruadar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txttituloIntermedio = new System.Windows.Forms.TextBox();
-            this.txtProbIntermedio = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bntGuardar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -61,6 +55,14 @@
             this.problema = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.panelalgtIntermedio = new System.Windows.Forms.Panel();
+            this.dataGintermedio = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnIntermedioGruadar = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txttituloIntermedio = new System.Windows.Forms.TextBox();
+            this.txtProbIntermedio = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.dataGEstudiantes = new System.Windows.Forms.DataGridView();
             this.matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -87,11 +89,11 @@
             this.panel1.SuspendLayout();
             this.panelAdmin1.SuspendLayout();
             this.panelMantAlgtBasico.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).BeginInit();
             this.panelalgtIntermedio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGintermedio)).BeginInit();
             this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGEstudiantes)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -203,7 +205,6 @@
             this.panelAdmin1.Controls.Add(this.dataGEstudiantes);
             this.panelAdmin1.Controls.Add(this.panel2);
             this.panelAdmin1.Controls.Add(this.toolStrip1);
-            this.panelAdmin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdmin1.Location = new System.Drawing.Point(0, 0);
             this.panelAdmin1.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdmin1.Name = "panelAdmin1";
@@ -224,6 +225,148 @@
             this.panelMantAlgtBasico.TabIndex = 3;
             this.panelMantAlgtBasico.Visible = false;
             this.panelMantAlgtBasico.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMantAlgtBasico_Paint);
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightBlue;
+            this.panel3.Controls.Add(this.bntGuardar);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.txtmantTitulo);
+            this.panel3.Controls.Add(this.txtmantproblema);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Location = new System.Drawing.Point(49, 111);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(362, 488);
+            this.panel3.TabIndex = 1;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // bntGuardar
+            // 
+            this.bntGuardar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.bntGuardar.Location = new System.Drawing.Point(36, 425);
+            this.bntGuardar.Name = "bntGuardar";
+            this.bntGuardar.Size = new System.Drawing.Size(280, 48);
+            this.bntGuardar.TabIndex = 4;
+            this.bntGuardar.Text = "Guardar";
+            this.bntGuardar.UseVisualStyleBackColor = false;
+            this.bntGuardar.Click += new System.EventHandler(this.bntGuardar_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(36, 171);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(102, 28);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Problema";
+            // 
+            // txtmantTitulo
+            // 
+            this.txtmantTitulo.Location = new System.Drawing.Point(36, 109);
+            this.txtmantTitulo.Name = "txtmantTitulo";
+            this.txtmantTitulo.Size = new System.Drawing.Size(284, 34);
+            this.txtmantTitulo.TabIndex = 2;
+            // 
+            // txtmantproblema
+            // 
+            this.txtmantproblema.Location = new System.Drawing.Point(36, 215);
+            this.txtmantproblema.Multiline = true;
+            this.txtmantproblema.Name = "txtmantproblema";
+            this.txtmantproblema.Size = new System.Drawing.Size(276, 183);
+            this.txtmantproblema.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(36, 61);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(68, 28);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Titulo";
+            // 
+            // dataGalgotBasico
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGalgotBasico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGalgotBasico.BackgroundColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGalgotBasico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGalgotBasico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGalgotBasico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idAlgoritmo,
+            this.titulo,
+            this.problema,
+            this.dataGridViewImageColumn1,
+            this.dataGridViewImageColumn2});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGalgotBasico.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGalgotBasico.Location = new System.Drawing.Point(457, 111);
+            this.dataGalgotBasico.Name = "dataGalgotBasico";
+            this.dataGalgotBasico.RowHeadersWidth = 51;
+            this.dataGalgotBasico.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGalgotBasico.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.White;
+            this.dataGalgotBasico.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dataGalgotBasico.RowTemplate.Height = 29;
+            this.dataGalgotBasico.Size = new System.Drawing.Size(1004, 482);
+            this.dataGalgotBasico.TabIndex = 0;
+            // 
+            // idAlgoritmo
+            // 
+            this.idAlgoritmo.DataPropertyName = "idAlgoritmo";
+            this.idAlgoritmo.HeaderText = "codigo";
+            this.idAlgoritmo.MinimumWidth = 6;
+            this.idAlgoritmo.Name = "idAlgoritmo";
+            this.idAlgoritmo.Visible = false;
+            this.idAlgoritmo.Width = 125;
+            // 
+            // titulo
+            // 
+            this.titulo.DataPropertyName = "titulo";
+            this.titulo.HeaderText = "Titulo";
+            this.titulo.MinimumWidth = 6;
+            this.titulo.Name = "titulo";
+            this.titulo.Width = 125;
+            // 
+            // problema
+            // 
+            this.problema.DataPropertyName = "problema";
+            this.problema.HeaderText = "Problema";
+            this.problema.MinimumWidth = 6;
+            this.problema.Name = "problema";
+            this.problema.Width = 125;
+            // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.HeaderText = "Editar";
+            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
+            this.dataGridViewImageColumn1.MinimumWidth = 6;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            this.dataGridViewImageColumn1.Width = 125;
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "Eliminar";
+            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            this.dataGridViewImageColumn2.Width = 125;
             // 
             // panelalgtIntermedio
             // 
@@ -307,133 +450,11 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Titulo";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightBlue;
-            this.panel3.Controls.Add(this.bntGuardar);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.txtmantTitulo);
-            this.panel3.Controls.Add(this.txtmantproblema);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(62, 111);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(362, 488);
-            this.panel3.TabIndex = 1;
-            // 
-            // bntGuardar
-            // 
-            this.bntGuardar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.bntGuardar.Location = new System.Drawing.Point(36, 425);
-            this.bntGuardar.Name = "bntGuardar";
-            this.bntGuardar.Size = new System.Drawing.Size(280, 48);
-            this.bntGuardar.TabIndex = 4;
-            this.bntGuardar.Text = "Guardar";
-            this.bntGuardar.UseVisualStyleBackColor = false;
-            this.bntGuardar.Click += new System.EventHandler(this.bntGuardar_Click);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(36, 171);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(102, 28);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Problema";
-            // 
-            // txtmantTitulo
-            // 
-            this.txtmantTitulo.Location = new System.Drawing.Point(36, 109);
-            this.txtmantTitulo.Name = "txtmantTitulo";
-            this.txtmantTitulo.Size = new System.Drawing.Size(284, 34);
-            this.txtmantTitulo.TabIndex = 2;
-            // 
-            // txtmantproblema
-            // 
-            this.txtmantproblema.Location = new System.Drawing.Point(36, 215);
-            this.txtmantproblema.Multiline = true;
-            this.txtmantproblema.Name = "txtmantproblema";
-            this.txtmantproblema.Size = new System.Drawing.Size(276, 183);
-            this.txtmantproblema.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(36, 61);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 28);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Titulo";
-            // 
-            // dataGalgotBasico
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.DimGray;
-            this.dataGalgotBasico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGalgotBasico.BackgroundColor = System.Drawing.Color.MidnightBlue;
-            this.dataGalgotBasico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGalgotBasico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idAlgoritmo,
-            this.titulo,
-            this.problema,
-            this.dataGridViewImageColumn1,
-            this.dataGridViewImageColumn2});
-            this.dataGalgotBasico.Location = new System.Drawing.Point(457, 111);
-            this.dataGalgotBasico.Name = "dataGalgotBasico";
-            this.dataGalgotBasico.RowHeadersWidth = 51;
-            this.dataGalgotBasico.RowTemplate.Height = 29;
-            this.dataGalgotBasico.Size = new System.Drawing.Size(1004, 482);
-            this.dataGalgotBasico.TabIndex = 0;
-            // 
-            // idAlgoritmo
-            // 
-            this.idAlgoritmo.DataPropertyName = "idAlgoritmo";
-            this.idAlgoritmo.HeaderText = "codigo";
-            this.idAlgoritmo.MinimumWidth = 6;
-            this.idAlgoritmo.Name = "idAlgoritmo";
-            this.idAlgoritmo.Visible = false;
-            this.idAlgoritmo.Width = 125;
-            // 
-            // titulo
-            // 
-            this.titulo.DataPropertyName = "titulo";
-            this.titulo.HeaderText = "Titulo";
-            this.titulo.MinimumWidth = 6;
-            this.titulo.Name = "titulo";
-            this.titulo.Width = 125;
-            // 
-            // problema
-            // 
-            this.problema.DataPropertyName = "problema";
-            this.problema.HeaderText = "Problema";
-            this.problema.MinimumWidth = 6;
-            this.problema.Name = "problema";
-            this.problema.Width = 125;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.HeaderText = "Editar";
-            this.dataGridViewImageColumn1.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn1.Image")));
-            this.dataGridViewImageColumn1.MinimumWidth = 6;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            this.dataGridViewImageColumn1.Width = 125;
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.HeaderText = "Eliminar";
-            this.dataGridViewImageColumn2.Image = ((System.Drawing.Image)(resources.GetObject("dataGridViewImageColumn2.Image")));
-            this.dataGridViewImageColumn2.MinimumWidth = 6;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            this.dataGridViewImageColumn2.Width = 125;
-            // 
             // dataGEstudiantes
             // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            this.dataGEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dataGEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGEstudiantes.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -446,6 +467,8 @@
             this.dataGEstudiantes.Location = new System.Drawing.Point(388, 153);
             this.dataGEstudiantes.Name = "dataGEstudiantes";
             this.dataGEstudiantes.RowHeadersWidth = 51;
+            this.dataGEstudiantes.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGEstudiantes.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGEstudiantes.RowTemplate.Height = 29;
             this.dataGEstudiantes.Size = new System.Drawing.Size(679, 450);
             this.dataGEstudiantes.TabIndex = 2;
@@ -679,13 +702,13 @@
             this.panelAdmin1.ResumeLayout(false);
             this.panelAdmin1.PerformLayout();
             this.panelMantAlgtBasico.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).EndInit();
             this.panelalgtIntermedio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGintermedio)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGEstudiantes)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

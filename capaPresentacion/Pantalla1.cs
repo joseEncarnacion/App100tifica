@@ -100,5 +100,13 @@ namespace capaPresentacion
           
             limpiar();
         }
+
+        private void btn_admin_Click(object sender, EventArgs e)
+        {
+            Login longinVentana = new Login();
+
+            longinVentana.Show();
+            this.Hide();
+        }
     }
 }

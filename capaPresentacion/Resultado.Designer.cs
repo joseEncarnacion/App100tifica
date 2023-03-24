@@ -81,6 +81,7 @@
             this.btnTerminar.TabIndex = 2;
             this.btnTerminar.Text = "Terminar Intento";
             this.btnTerminar.UseVisualStyleBackColor = false;
+            this.btnTerminar.Click += new System.EventHandler(this.btnTerminar_Click);
             // 
             // btnSolicitarTiempo
             // 

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pantalla1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btn_registro = new System.Windows.Forms.Button();
@@ -46,12 +45,13 @@
             this.cBoxCarrera = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.textpassword = new System.Windows.Forms.TextBox();
+            this.btn_admin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
@@ -65,9 +65,9 @@
             this.label2.BackColor = System.Drawing.Color.MidnightBlue;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label2.Location = new System.Drawing.Point(281, 342);
+            this.label2.Location = new System.Drawing.Point(281, 340);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(868, 608);
+            this.label2.Size = new System.Drawing.Size(864, 608);
             this.label2.TabIndex = 1;
             // 
             // btn_registro
@@ -79,9 +79,9 @@
             this.btn_registro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.btn_registro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_registro.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_registro.Location = new System.Drawing.Point(281, 342);
+            this.btn_registro.Location = new System.Drawing.Point(279, 342);
             this.btn_registro.Name = "btn_registro";
-            this.btn_registro.Size = new System.Drawing.Size(434, 59);
+            this.btn_registro.Size = new System.Drawing.Size(434, 55);
             this.btn_registro.TabIndex = 2;
             this.btn_registro.Text = "Registrate y Participa";
             this.btn_registro.UseVisualStyleBackColor = false;
@@ -94,7 +94,7 @@
             this.textMatricula.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textMatricula.Location = new System.Drawing.Point(345, 504);
             this.textMatricula.Name = "textMatricula";
-            this.textMatricula.Size = new System.Drawing.Size(556, 41);
+            this.textMatricula.Size = new System.Drawing.Size(552, 41);
             this.textMatricula.TabIndex = 3;
             // 
             // text_nom
@@ -128,7 +128,7 @@
             this.textNombre.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textNombre.Location = new System.Drawing.Point(345, 604);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(556, 41);
+            this.textNombre.Size = new System.Drawing.Size(552, 41);
             this.textNombre.TabIndex = 5;
             this.textNombre.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -161,9 +161,9 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.BackColor = System.Drawing.Color.MidnightBlue;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label5.Location = new System.Drawing.Point(281, 342);
+            this.label5.Location = new System.Drawing.Point(281, 340);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(868, 59);
+            this.label5.Size = new System.Drawing.Size(864, 59);
             this.label5.TabIndex = 10;
             // 
             // btnLimpiar
@@ -188,11 +188,10 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Navy;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(715, 342);
+            this.button1.Location = new System.Drawing.Point(713, 342);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(434, 59);
+            this.button1.Size = new System.Drawing.Size(434, 55);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Inicio Seccion";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // label6
@@ -201,10 +200,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Image = ((System.Drawing.Image)(resources.GetObject("label6.Image")));
-            this.label6.Location = new System.Drawing.Point(1197, 22);
+            this.label6.Image = global::capaPresentacion.Properties.Resources.image_8;
+            this.label6.Location = new System.Drawing.Point(12, 39);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(213, 111);
+            this.label6.Size = new System.Drawing.Size(319, 107);
             this.label6.TabIndex = 13;
             // 
             // label7
@@ -212,10 +211,11 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label7.Image = ((System.Drawing.Image)(resources.GetObject("label7.Image")));
-            this.label7.Location = new System.Drawing.Point(211, 72);
+            this.label7.Image = global::capaPresentacion.Properties.Resources.AppArte__1_;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Location = new System.Drawing.Point(366, 120);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(552, 279);
+            this.label7.Size = new System.Drawing.Size(535, 287);
             this.label7.TabIndex = 14;
             // 
             // cBoxCarrera
@@ -231,7 +231,7 @@
             "Mecatronica"});
             this.cBoxCarrera.Location = new System.Drawing.Point(346, 704);
             this.cBoxCarrera.Name = "cBoxCarrera";
-            this.cBoxCarrera.Size = new System.Drawing.Size(555, 36);
+            this.cBoxCarrera.Size = new System.Drawing.Size(551, 36);
             this.cBoxCarrera.TabIndex = 15;
             // 
             // label8
@@ -253,8 +253,22 @@
             this.textpassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textpassword.Location = new System.Drawing.Point(345, 797);
             this.textpassword.Name = "textpassword";
-            this.textpassword.Size = new System.Drawing.Size(556, 34);
+            this.textpassword.Size = new System.Drawing.Size(552, 34);
             this.textpassword.TabIndex = 16;
+            // 
+            // btn_admin
+            // 
+            this.btn_admin.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btn_admin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_admin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_admin.Location = new System.Drawing.Point(1048, 66);
+            this.btn_admin.Name = "btn_admin";
+            this.btn_admin.Size = new System.Drawing.Size(204, 45);
+            this.btn_admin.TabIndex = 18;
+            this.btn_admin.Text = "Administradores";
+            this.btn_admin.UseVisualStyleBackColor = false;
+            this.btn_admin.Click += new System.EventHandler(this.btn_admin_Click);
             // 
             // Pantalla1
             // 
@@ -262,6 +276,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1422, 977);
+            this.Controls.Add(this.btn_admin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textpassword);
             this.Controls.Add(this.cBoxCarrera);
@@ -279,6 +294,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1440, 1024);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1440, 1024);
@@ -309,5 +326,6 @@
         private ComboBox cBoxCarrera;
         private Label label8;
         private TextBox textpassword;
+        private Button btn_admin;
     }
 }

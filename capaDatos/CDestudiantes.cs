@@ -32,7 +32,6 @@ namespace capaDatos
             cmd.Parameters.AddWithValue("@mat", est.Matricula);
             cmd.Parameters.AddWithValue("@nom", est.nombreE);
             cmd.Parameters.AddWithValue("@carrer", est.carreraID);
-            cmd.Parameters.AddWithValue("@passw", est.password);
             if(conn.State == ConnectionState.Open) conn.Close();
             conn.Open();
             cmd.ExecuteNonQuery();
@@ -44,7 +43,7 @@ namespace capaDatos
         {
             SqlCommand cmd = new SqlCommand("sp_elimiarEstudiante", conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@idest", id);
+            cmd.Parameters.AddWithValue("@MatriculaEst", id);
             if(conn.State==ConnectionState.Open) conn.Close();
             conn.Open() ;
             cmd.ExecuteNonQuery();
@@ -60,7 +59,6 @@ namespace capaDatos
             cmd.Parameters.AddWithValue("@mat", est.Matricula);
             cmd.Parameters.AddWithValue("@nom", est.nombreE);
             cmd.Parameters.AddWithValue("@carrer", est.carreraID);
-            cmd.Parameters.AddWithValue("@passw", est.password);
             if (conn.State == ConnectionState.Open) conn.Close();
             conn.Open();
             cmd.ExecuteNonQuery();

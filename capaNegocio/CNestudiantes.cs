@@ -32,11 +32,7 @@ namespace capaNegocio
                 resultado = false;
             }
 
-            if (estudiante.password == string.Empty)
-            {
-                MessageBox.Show("El Password es obligatorio");
-                resultado = false;
-            }
+         
 
             return resultado;
         }
@@ -59,6 +55,11 @@ namespace capaNegocio
         public void Neestudiante_editar(CEestudiante est) {
 
             datoEstudiante.ActualizarDatos(est);
+        }
+
+        public void NEestudiante_Eliminar(int id)
+        {
+            datoEstudiante.Datos_Eliminar(id);
         }
 
     }

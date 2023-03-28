@@ -62,6 +62,7 @@
             this.btn_intermedio.Size = new System.Drawing.Size(294, 250);
             this.btn_intermedio.TabIndex = 2;
             this.btn_intermedio.UseVisualStyleBackColor = true;
+            this.btn_intermedio.Click += new System.EventHandler(this.btn_intermedio_Click);
             // 
             // label1
             // 

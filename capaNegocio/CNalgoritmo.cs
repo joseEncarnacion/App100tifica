@@ -24,6 +24,66 @@ namespace capaNegocio
         public string nombreUsuario { get; set; }
 
 
+        //Refactorizando random /> nuevo random 
+        Random Randomrand = new Random();
+        int numSelected;
+        List<string> listaAlgoritmos = new List<string>();
+
+
+
+
+        //metodo alimentar lista de algoritmo
+        public void NE_Ramdombasico()
+        {
+            DataTable dtbasico = CN_countAlgoritmo();
+            int x = 0;
+
+
+            while(x < dtbasico.Rows.Count)
+            {
+
+                
+               var algo = dtbasico.Rows[x]["problema"].ToString();
+                listaAlgoritmos.Add(algo);
+               
+                x++;
+
+
+            }
+           
+
+        }
+
+
+        //metodo Random basico
+        public string AlgoritmoSeleccionadoBasico()
+        {
+            string seleccionado = string.Empty;
+
+            try
+            {
+                numSelected = Randomrand.Next(0, listaAlgoritmos.Count);
+                seleccionado = listaAlgoritmos[numSelected];
+                MessageBox.Show(seleccionado);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cantidad de algoritmo 0 "+ ex);
+            }
+
+           // MessageBox.Show(seleccionado);
+
+            return seleccionado;
+
+        }
+
+
+        public void NE_RamdomIntermedio()
+        {
+
+        }
+
+
 
         // validaciones para insertar algoritmos
         public bool validarAlgortimoB(CEalgoritmo e)
@@ -65,6 +125,8 @@ namespace capaNegocio
 
         public void algoritmoBasico()
         {
+
+
             // variabble busqueda /> Aqui se llena el DataTable para tener el total de filas que 
             //tiene nuestra tabla
             var busqueda = CN_countAlgoritmo();
@@ -131,7 +193,7 @@ namespace capaNegocio
         }
 
 
-        //listar
+        //listar cantidadAlgoritmo
         public DataTable CN_countAlgoritmo()
         {
             return algoritmosRef.cantidadAlgoritmo();

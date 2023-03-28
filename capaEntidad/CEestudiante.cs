@@ -13,7 +13,7 @@ namespace capaEntidad
         public string Matricula { get; set; }
         public string nombreE { get; set; }
         public string carreraID { get; set; }
-        public string password { get; set; }
+        
 
 
     }

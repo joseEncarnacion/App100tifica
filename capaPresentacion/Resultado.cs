@@ -22,15 +22,14 @@ namespace capaPresentacion
         }
 
         CNalgoritmo AlgoritmoNegocio = new CNalgoritmo();
+        CNalgoritmoIntermedio algoritmoMed = new CNalgoritmoIntermedio();   
 
         private void Resultado_Load(object sender, EventArgs e)
         {
 
-            
-            AlgoritmoNegocio.algoritmoBasico();
 
-            txt_NombreUsuario.Text = AlgoritmoNegocio.nombreUsuario;
-            txt_Problema.Text = AlgoritmoNegocio.AlgoritmoRandomSelected;
+            AlgoritmoNegocio.NE_Ramdombasico();
+            txt_Problema.Text = AlgoritmoNegocio.AlgoritmoSeleccionadoBasico();
 
 
         }

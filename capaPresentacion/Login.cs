@@ -21,8 +21,16 @@ namespace capaPresentacion
 
        // CEestudiante estudiantes = new CEestudiante();
         CNestudiantes estudiantes = new CNestudiantes();
+        CEestudiante estudianteEntidad = new CEestudiante();
         CNalgoritmo algoritmos= new CNalgoritmo();
         CEalgoritmo EntidadAlgortimo   = new CEalgoritmo();
+
+        private void limpiarInputEst()
+        {
+            txtMantCarreraCBOX.Text = string.Empty;
+            txtMant_matricula.Text = string.Empty;  
+            txtMant_NombreEST.Text = string.Empty;  
+        }
 
         private void registrarAlgoritmobasico()
         {
@@ -86,11 +94,16 @@ namespace capaPresentacion
             
         }
 
+        private void listarEstudiantes()
+        {
+            DataTable dt = estudiantes.NEstudiante_listado();
+            dataGEstudiantes.DataSource = dt;
+        }
+
         private void panelAdmin1_Paint(object sender, PaintEventArgs e)
         {
             //Traer registros 
-            DataTable dt = estudiantes.NEstudiante_listado();
-            dataGEstudiantes.DataSource = dt;
+            listarEstudiantes();
         }
 
         private void panelMantAlgtBasico_Paint(object sender, PaintEventArgs e)
@@ -121,10 +134,72 @@ namespace capaPresentacion
         private void btn_editarManEST_Click(object sender, EventArgs e)
         {
             //editarmantenimiento estudiante
+          
+            editarestudiante();
+            listarEstudiantes();
+            limpiarInputEst();
+
+
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void dataGEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGEstudiantes.Rows[e.RowIndex].Cells["eliminar"].Selected)
+            {
+                int Eliminar = Convert.ToInt32(dataGEstudiantes.Rows[e.RowIndex].Cells["matricula"].Value.ToString());
+                //metodo eliminar
+                estudiantes.NEestudiante_Eliminar(Eliminar);
+
+                //nueva lista
+                listarEstudiantes();
+
+
+
+            }
+            else if (dataGEstudiantes.Rows[e.RowIndex].Cells["editar"].Selected)
+            {
+                txtMant_matricula.Text = dataGEstudiantes.Rows[e.RowIndex].Cells["matricula"].Value.ToString();
+                txtMant_NombreEST.Text = dataGEstudiantes.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+                txtMantCarreraCBOX.Text = dataGEstudiantes.Rows[e.RowIndex].Cells["carrera"].Value.ToString();
+            }
+
+        }
+
+        private void editarestudiante()
+        {
+            bool respuesta;
+
+            estudianteEntidad.Matricula = txtMant_matricula.Text;
+            estudianteEntidad.nombreE = txtMant_NombreEST.Text;
+            estudianteEntidad.carreraID = txtMantCarreraCBOX.Text;
+
+            respuesta =estudiantes.validarDatosEstudiante(estudianteEntidad);
+
+            if (respuesta == false) return;
+
+            estudiantes.Neestudiante_editar(estudianteEntidad);
+            MessageBox.Show("Editado satisfactoriamente");
+
+        }
+
+        private void dataGalgotBasico_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Eventos de un clic en dataGridview
+            if (dataGalgotBasico.Rows[e.RowIndex].Cells["eliminar"].Selected)
+            {
+                int eliminar =Convert.ToInt32(dataGalgotBasico.Rows[e.RowIndex].Cells["idAlgoritmo"].Value.ToString());
+            
+                algoritmos.CN_EliminarRegistro(eliminar);
+                //falta el metodo listar algoritmo
+                
+            }
+
 
         }
     }

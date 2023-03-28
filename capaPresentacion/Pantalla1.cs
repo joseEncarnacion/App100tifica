@@ -8,6 +8,8 @@ namespace capaPresentacion
         public Pantalla1()
         {
             InitializeComponent();
+
+            cBoxCarrera.DropDownStyle= ComboBoxStyle.DropDownList;
           
         }
 
@@ -27,7 +29,7 @@ namespace capaPresentacion
             cBoxCarrera.Text = string.Empty;
             textMatricula.Text = string.Empty;
             textNombre.Text = string.Empty;
-            textpassword.Text = string.Empty;   
+             
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -68,7 +70,7 @@ namespace capaPresentacion
             estudiantes.Matricula= textMatricula.Text;
             estudiantes.nombreE = textNombre.Text;
             estudiantes.carreraID = cBoxCarrera.Text;
-            estudiantes.password = textpassword.Text;
+            
             
 
             resultado = negocionEstudiante.validarDatosEstudiante(estudiantes);
@@ -107,6 +109,17 @@ namespace capaPresentacion
 
             longinVentana.Show();
             this.Hide();
+        }
+
+        private void textMatricula_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >=32 && e.KeyChar<= 47) || (e.KeyChar >=58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Solo numeros", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled= true;
+                return;
+
+            }
         }
     }
 }

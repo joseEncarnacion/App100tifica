@@ -43,6 +43,14 @@
             this.textUser = new System.Windows.Forms.TextBox();
             this.panelAdmin1 = new System.Windows.Forms.Panel();
             this.panelMantAlgtBasico = new System.Windows.Forms.Panel();
+            this.panelalgtIntermedio = new System.Windows.Forms.Panel();
+            this.dataGintermedio = new System.Windows.Forms.DataGridView();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnIntermedioGruadar = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txttituloIntermedio = new System.Windows.Forms.TextBox();
+            this.txtProbIntermedio = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bntGuardar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,14 +63,6 @@
             this.problema = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panelalgtIntermedio = new System.Windows.Forms.Panel();
-            this.dataGintermedio = new System.Windows.Forms.DataGridView();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnIntermedioGruadar = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txttituloIntermedio = new System.Windows.Forms.TextBox();
-            this.txtProbIntermedio = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.dataGEstudiantes = new System.Windows.Forms.DataGridView();
             this.matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -89,11 +89,11 @@
             this.panel1.SuspendLayout();
             this.panelAdmin1.SuspendLayout();
             this.panelMantAlgtBasico.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).BeginInit();
             this.panelalgtIntermedio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGintermedio)).BeginInit();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGEstudiantes)).BeginInit();
             this.panel2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -226,6 +226,87 @@
             this.panelMantAlgtBasico.Visible = false;
             this.panelMantAlgtBasico.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMantAlgtBasico_Paint);
             // 
+            // panelalgtIntermedio
+            // 
+            this.panelalgtIntermedio.Controls.Add(this.dataGintermedio);
+            this.panelalgtIntermedio.Controls.Add(this.panel5);
+            this.panelalgtIntermedio.Location = new System.Drawing.Point(848, 220);
+            this.panelalgtIntermedio.Name = "panelalgtIntermedio";
+            this.panelalgtIntermedio.Size = new System.Drawing.Size(1185, 655);
+            this.panelalgtIntermedio.TabIndex = 2;
+            this.panelalgtIntermedio.Visible = false;
+            this.panelalgtIntermedio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelalgtIntermedio_Paint);
+            // 
+            // dataGintermedio
+            // 
+            this.dataGintermedio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGintermedio.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dataGintermedio.Location = new System.Drawing.Point(450, 96);
+            this.dataGintermedio.Name = "dataGintermedio";
+            this.dataGintermedio.RowHeadersWidth = 51;
+            this.dataGintermedio.RowTemplate.Height = 29;
+            this.dataGintermedio.Size = new System.Drawing.Size(997, 488);
+            this.dataGintermedio.TabIndex = 3;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.LightBlue;
+            this.panel5.Controls.Add(this.btnIntermedioGruadar);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.txttituloIntermedio);
+            this.panel5.Controls.Add(this.txtProbIntermedio);
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Location = new System.Drawing.Point(74, 96);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(362, 488);
+            this.panel5.TabIndex = 2;
+            // 
+            // btnIntermedioGruadar
+            // 
+            this.btnIntermedioGruadar.BackColor = System.Drawing.Color.MidnightBlue;
+            this.btnIntermedioGruadar.Location = new System.Drawing.Point(36, 425);
+            this.btnIntermedioGruadar.Name = "btnIntermedioGruadar";
+            this.btnIntermedioGruadar.Size = new System.Drawing.Size(280, 48);
+            this.btnIntermedioGruadar.TabIndex = 4;
+            this.btnIntermedioGruadar.Text = "Guardar";
+            this.btnIntermedioGruadar.UseVisualStyleBackColor = false;
+            this.btnIntermedioGruadar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(36, 171);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(102, 28);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Problema";
+            // 
+            // txttituloIntermedio
+            // 
+            this.txttituloIntermedio.Location = new System.Drawing.Point(36, 109);
+            this.txttituloIntermedio.Name = "txttituloIntermedio";
+            this.txttituloIntermedio.Size = new System.Drawing.Size(284, 34);
+            this.txttituloIntermedio.TabIndex = 2;
+            // 
+            // txtProbIntermedio
+            // 
+            this.txtProbIntermedio.Location = new System.Drawing.Point(36, 215);
+            this.txtProbIntermedio.Multiline = true;
+            this.txtProbIntermedio.Name = "txtProbIntermedio";
+            this.txtProbIntermedio.Size = new System.Drawing.Size(284, 183);
+            this.txtProbIntermedio.TabIndex = 1;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(36, 61);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(68, 28);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Titulo";
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightBlue;
@@ -326,6 +407,7 @@
             this.dataGalgotBasico.RowTemplate.Height = 29;
             this.dataGalgotBasico.Size = new System.Drawing.Size(1004, 482);
             this.dataGalgotBasico.TabIndex = 0;
+            this.dataGalgotBasico.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGalgotBasico_CellContentClick);
             // 
             // idAlgoritmo
             // 
@@ -368,88 +450,6 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 125;
             // 
-            // panelalgtIntermedio
-            // 
-            this.panelalgtIntermedio.Controls.Add(this.dataGintermedio);
-            this.panelalgtIntermedio.Controls.Add(this.panel5);
-            this.panelalgtIntermedio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelalgtIntermedio.Location = new System.Drawing.Point(0, 0);
-            this.panelalgtIntermedio.Name = "panelalgtIntermedio";
-            this.panelalgtIntermedio.Size = new System.Drawing.Size(1509, 1020);
-            this.panelalgtIntermedio.TabIndex = 2;
-            this.panelalgtIntermedio.Visible = false;
-            this.panelalgtIntermedio.Paint += new System.Windows.Forms.PaintEventHandler(this.panelalgtIntermedio_Paint);
-            // 
-            // dataGintermedio
-            // 
-            this.dataGintermedio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGintermedio.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGintermedio.Location = new System.Drawing.Point(450, 96);
-            this.dataGintermedio.Name = "dataGintermedio";
-            this.dataGintermedio.RowHeadersWidth = 51;
-            this.dataGintermedio.RowTemplate.Height = 29;
-            this.dataGintermedio.Size = new System.Drawing.Size(997, 488);
-            this.dataGintermedio.TabIndex = 3;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.LightBlue;
-            this.panel5.Controls.Add(this.btnIntermedioGruadar);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.txttituloIntermedio);
-            this.panel5.Controls.Add(this.txtProbIntermedio);
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Location = new System.Drawing.Point(74, 96);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(362, 488);
-            this.panel5.TabIndex = 2;
-            // 
-            // btnIntermedioGruadar
-            // 
-            this.btnIntermedioGruadar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnIntermedioGruadar.Location = new System.Drawing.Point(36, 425);
-            this.btnIntermedioGruadar.Name = "btnIntermedioGruadar";
-            this.btnIntermedioGruadar.Size = new System.Drawing.Size(280, 48);
-            this.btnIntermedioGruadar.TabIndex = 4;
-            this.btnIntermedioGruadar.Text = "Guardar";
-            this.btnIntermedioGruadar.UseVisualStyleBackColor = false;
-            this.btnIntermedioGruadar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(36, 171);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 28);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Problema";
-            // 
-            // txttituloIntermedio
-            // 
-            this.txttituloIntermedio.Location = new System.Drawing.Point(36, 109);
-            this.txttituloIntermedio.Name = "txttituloIntermedio";
-            this.txttituloIntermedio.Size = new System.Drawing.Size(284, 34);
-            this.txttituloIntermedio.TabIndex = 2;
-            // 
-            // txtProbIntermedio
-            // 
-            this.txtProbIntermedio.Location = new System.Drawing.Point(36, 215);
-            this.txtProbIntermedio.Multiline = true;
-            this.txtProbIntermedio.Name = "txtProbIntermedio";
-            this.txtProbIntermedio.Size = new System.Drawing.Size(284, 183);
-            this.txtProbIntermedio.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(36, 61);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 28);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Titulo";
-            // 
             // dataGEstudiantes
             // 
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -472,6 +472,7 @@
             this.dataGEstudiantes.RowTemplate.Height = 29;
             this.dataGEstudiantes.Size = new System.Drawing.Size(679, 450);
             this.dataGEstudiantes.TabIndex = 2;
+            this.dataGEstudiantes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGEstudiantes_CellContentClick);
             // 
             // matricula
             // 
@@ -702,13 +703,13 @@
             this.panelAdmin1.ResumeLayout(false);
             this.panelAdmin1.PerformLayout();
             this.panelMantAlgtBasico.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).EndInit();
             this.panelalgtIntermedio.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGintermedio)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGalgotBasico)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGEstudiantes)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

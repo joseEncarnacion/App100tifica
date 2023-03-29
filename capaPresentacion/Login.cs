@@ -24,6 +24,7 @@ namespace capaPresentacion
         CEestudiante estudianteEntidad = new CEestudiante();
         CNalgoritmo algoritmos= new CNalgoritmo();
         CEalgoritmo EntidadAlgortimo   = new CEalgoritmo();
+        CNalgoritmoIntermedio NalgotIntermedio = new CNalgoritmoIntermedio();
 
         private void limpiarInputEst()
         {
@@ -121,7 +122,11 @@ namespace capaPresentacion
 
         private void panelalgtIntermedio_Paint(object sender, PaintEventArgs e)
         {
-            
+            //Taer algoritmo medio
+
+            DataTable dt = NalgotIntermedio.CNlistarAlgotMed();
+            dataGintermedio.DataSource= dt;
+
         }
 
         private void bntGuardar_Click(object sender, EventArgs e)
@@ -150,6 +155,8 @@ namespace capaPresentacion
 
         private void dataGEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            if (e.RowIndex == 0) { return; }
             if (dataGEstudiantes.Rows[e.RowIndex].Cells["eliminar"].Selected)
             {
                 int Eliminar = Convert.ToInt32(dataGEstudiantes.Rows[e.RowIndex].Cells["matricula"].Value.ToString());
@@ -193,14 +200,19 @@ namespace capaPresentacion
             // Eventos de un clic en dataGridview
             if (dataGalgotBasico.Rows[e.RowIndex].Cells["eliminar"].Selected)
             {
-                int eliminar =Convert.ToInt32(dataGalgotBasico.Rows[e.RowIndex].Cells["idAlgoritmo"].Value.ToString());
+                int Eliminar =Convert.ToInt32(dataGalgotBasico.Rows[e.RowIndex].Cells["idAlgoritmo"].Value.ToString());
             
-                algoritmos.CN_EliminarRegistro(eliminar);
+                algoritmos.CN_EliminarRegistro(Eliminar);
                 //falta el metodo listar algoritmo
                 
             }
 
 
+        }
+
+        private void dataGintermedio_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

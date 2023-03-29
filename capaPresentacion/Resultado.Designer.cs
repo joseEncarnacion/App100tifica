@@ -29,103 +29,78 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txt_Problema = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnTerminar = new System.Windows.Forms.Button();
-            this.btnSolicitarTiempo = new System.Windows.Forms.Button();
+            this.btn_resultIrInicio = new System.Windows.Forms.Button();
             this.text_CountDown = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_NombreUsuario = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txt_Problema);
-            this.panel1.Location = new System.Drawing.Point(287, 221);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(850, 188);
+            this.panel1.Size = new System.Drawing.Size(1422, 313);
             this.panel1.TabIndex = 0;
-            // 
-            // txt_Problema
-            // 
-            this.txt_Problema.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_Problema.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txt_Problema.Location = new System.Drawing.Point(32, 20);
-            this.txt_Problema.Name = "txt_Problema";
-            this.txt_Problema.Size = new System.Drawing.Size(788, 149);
-            this.txt_Problema.TabIndex = 0;
-            this.txt_Problema.Text = "l";
-            this.txt_Problema.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(676, 136);
+            this.label1.Image = global::capaPresentacion.Properties.Resources.AppArte__1_;
+            this.label1.Location = new System.Drawing.Point(343, 158);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Hola!";
+            this.label1.Size = new System.Drawing.Size(326, 173);
+            this.label1.TabIndex = 0;
             // 
-            // btnTerminar
+            // btn_resultIrInicio
             // 
-            this.btnTerminar.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.btnTerminar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnTerminar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnTerminar.Location = new System.Drawing.Point(398, 597);
-            this.btnTerminar.Name = "btnTerminar";
-            this.btnTerminar.Size = new System.Drawing.Size(285, 47);
-            this.btnTerminar.TabIndex = 2;
-            this.btnTerminar.Text = "Terminar Intento";
-            this.btnTerminar.UseVisualStyleBackColor = false;
-            this.btnTerminar.Click += new System.EventHandler(this.btnTerminar_Click);
-            // 
-            // btnSolicitarTiempo
-            // 
-            this.btnSolicitarTiempo.BackColor = System.Drawing.Color.Gold;
-            this.btnSolicitarTiempo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnSolicitarTiempo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSolicitarTiempo.Location = new System.Drawing.Point(723, 597);
-            this.btnSolicitarTiempo.Name = "btnSolicitarTiempo";
-            this.btnSolicitarTiempo.Size = new System.Drawing.Size(302, 47);
-            this.btnSolicitarTiempo.TabIndex = 3;
-            this.btnSolicitarTiempo.Text = "Solicitar Mas Tiempo";
-            this.btnSolicitarTiempo.UseVisualStyleBackColor = false;
+            this.btn_resultIrInicio.BackColor = System.Drawing.Color.Gold;
+            this.btn_resultIrInicio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_resultIrInicio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_resultIrInicio.Location = new System.Drawing.Point(517, 671);
+            this.btn_resultIrInicio.Name = "btn_resultIrInicio";
+            this.btn_resultIrInicio.Size = new System.Drawing.Size(347, 47);
+            this.btn_resultIrInicio.TabIndex = 3;
+            this.btn_resultIrInicio.Text = "Ir al inicio";
+            this.btn_resultIrInicio.UseVisualStyleBackColor = false;
+            this.btn_resultIrInicio.Click += new System.EventHandler(this.btn_resultIrInicio_Click);
             // 
             // text_CountDown
             // 
             this.text_CountDown.AutoSize = true;
             this.text_CountDown.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.text_CountDown.ForeColor = System.Drawing.Color.White;
-            this.text_CountDown.Location = new System.Drawing.Point(723, 460);
+            this.text_CountDown.Location = new System.Drawing.Point(541, 479);
             this.text_CountDown.Name = "text_CountDown";
-            this.text_CountDown.Size = new System.Drawing.Size(103, 54);
+            this.text_CountDown.Size = new System.Drawing.Size(310, 54);
             this.text_CountDown.TabIndex = 4;
-            this.text_CountDown.Text = "8:45";
+            this.text_CountDown.Text = "Enhorabuena!!!";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(488, 475);
+            this.label3.Location = new System.Drawing.Point(495, 545);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(205, 35);
+            this.label3.Size = new System.Drawing.Size(408, 35);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Tiempo Restante:";
+            this.label3.Text = "Estaremos validando tus resultados";
             // 
-            // txt_NombreUsuario
+            // label6
             // 
-            this.txt_NombreUsuario.AutoSize = true;
-            this.txt_NombreUsuario.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txt_NombreUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.txt_NombreUsuario.Location = new System.Drawing.Point(758, 136);
-            this.txt_NombreUsuario.Name = "txt_NombreUsuario";
-            this.txt_NombreUsuario.Size = new System.Drawing.Size(19, 30);
-            this.txt_NombreUsuario.TabIndex = 6;
-            this.txt_NombreUsuario.Text = ".";
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Image = global::capaPresentacion.Properties.Resources.image_8;
+            this.label6.Location = new System.Drawing.Point(12, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(319, 107);
+            this.label6.TabIndex = 14;
             // 
             // Resultado
             // 
@@ -133,12 +108,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MidnightBlue;
             this.ClientSize = new System.Drawing.Size(1422, 977);
-            this.Controls.Add(this.txt_NombreUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.text_CountDown);
-            this.Controls.Add(this.btnSolicitarTiempo);
-            this.Controls.Add(this.btnTerminar);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_resultIrInicio);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Resultado";
@@ -154,12 +126,10 @@
         #endregion
 
         private Panel panel1;
-        private Label label1;
-        private Button btnTerminar;
-        private Button btnSolicitarTiempo;
-        private Label txt_Problema;
+        private Button btn_resultIrInicio;
         private Label text_CountDown;
         private Label label3;
-        private Label txt_NombreUsuario;
+        private Label label1;
+        private Label label6;
     }
 }

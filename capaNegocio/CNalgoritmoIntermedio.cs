@@ -13,32 +13,38 @@ namespace capaNegocio
     {
 
         //Refactorizando random /> nuevo random 
-        Random Randomrand = new Random();
+        Random Randomrandly = new Random();
         int numSelected;
         List<string> listaAlgoritmosIntermedio = new List<string>();
 
+        CDAlgoritmoIntermedio medAlritmo = new CDAlgoritmoIntermedio();
+
         public void NE_RamdomIntermedio()
         {
-            DataTable dtbasico = CNlistarAlgotMed();
+            DataTable dtmed = CNlistarAlgotMed();
             int x = 0;
 
 
-            while (x < dtbasico.Rows.Count)
+            while (x < dtmed.Rows.Count)
             {
-
-                if (dtbasico.Rows.Count <= 0)
+                
+               if (dtmed.Rows.Count <= 0)
                 {
                     MessageBox.Show("No hay algoritmos disponebles a mostrar");
                 }
                 else
                 {
-                    var filas = dtbasico.Rows[x]["problema"].ToString();
+                    
+
+                   // MessageBox.Show("si hay algoritmos disponebles a mostrar");
+                    var filas = dtmed.Rows[x]["problema"].ToString();
                     listaAlgoritmosIntermedio.Add(filas);
+                    //MessageBox.Show(filas);
 
                 }
                 
 
-                x++;
+               x++;
 
 
             }
@@ -53,13 +59,13 @@ namespace capaNegocio
             string seleccionado = string.Empty;
             try
             {
-                numSelected = Randomrand.Next(0, listaAlgoritmosIntermedio.Count);
+                numSelected = Randomrandly.Next(0, listaAlgoritmosIntermedio.Count);
                 seleccionado = listaAlgoritmosIntermedio[numSelected];
-                MessageBox.Show(seleccionado);
+               // MessageBox.Show(seleccionado + " seleccionado");
             }
             catch(Exception ex) {
                 MessageBox.Show("Problemas al mostrar el algortimo" + ex);
-
+               // MessageBox.Show(numSelected.ToString());
             }
 
                 return seleccionado;
@@ -73,10 +79,10 @@ namespace capaNegocio
 
 
 
-        public
+        
 
 
-        CDAlgoritmoIntermedio medAlritmo =new CDAlgoritmoIntermedio();
+        
 
         public DataTable CNlistarAlgotMed()
         {

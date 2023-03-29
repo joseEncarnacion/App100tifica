@@ -22,21 +22,28 @@ namespace capaPresentacion
         }
 
         CNalgoritmo AlgoritmoNegocio = new CNalgoritmo();
-        CNalgoritmoIntermedio algoritmoMed = new CNalgoritmoIntermedio();   
+        CNalgoritmoIntermedio algoritmoMed = new CNalgoritmoIntermedio();  
+        CNRandomBtnParams parameters = new CNRandomBtnParams(); 
 
         private void Resultado_Load(object sender, EventArgs e)
         {
-
-
-            AlgoritmoNegocio.NE_Ramdombasico();
-            txt_Problema.Text = AlgoritmoNegocio.AlgoritmoSeleccionadoBasico();
-
-
+            
+            
+           
         }
         
         private void btnTerminar_Click(object sender, EventArgs e)
         {
 
+            
+        }
+
+        private void btn_resultIrInicio_Click(object sender, EventArgs e)
+        {
+            Pantalla1 pantallaInicio = new Pantalla1();
+
+            pantallaInicio.Show();
+            this.Hide();
 
         }
     }

@@ -1,0 +1,158 @@
+
+
+use appcientifica;
+
+
+select * from dbo.Estudiante;
+
+
+Create table dbo.Estudiante(
+	matricula varchar(12) not null primary key,
+	nombre varchar(100) not null,
+	carrera varchar(100)
+
+);
+
+ 
+CREATE TABLE dbo.AlgoritmoBasico(
+	idAlgoritmo int not null primary key identity,
+	titulo varchar(150) not null,
+	problema text
+
+);
+go
+CREATE TABLE dbo.AlgoritmoIntermedio(
+	idAlgoritmo int not null primary key identity,
+	titulo varchar(150) not null,
+	problema text
+);
+
+
+--Usuario
+CREATE TABLE dbo.Usuarios(
+	idUser int primary key identity,
+	usuario varchar(100),
+	passw varchar(100)
+	)
+
+	insert into dbo.Usuarios
+	values
+	('app1','123')
+
+
+
+	--procedimiento almacenado para login
+	CREATE PROCEDURE sp_usuario(
+	@user varchar(100),
+	@pass varchar(100)
+	)
+	as
+	SELECT * FROM dbo.Usuarios where usuario = @user and passw = @pass;
+
+
+--procedimientos almacenados
+
+create procedure sp_listar
+as
+select * from dbo.Estudiante;
+
+--ejecucion
+exec sp_listar;
+
+create procedure SP_INSERTAREst(
+	@mat varchar(12),
+	@nom varchar(100),
+	@carrer varchar(100)
+	)
+as
+	insert into dbo.Estudiante values(@mat, @nom, @carrer)
+
+
+drop procedure SP_INSERTAREst;
+
+
+Create Procedure SP_EditarEst(
+	@mat varchar(12),
+	@nom varchar(100),
+	@carrer varchar(100)
+)
+as
+	update Estudiante set nombre= @nom, carrera = @carrer where matricula = @mat;
+
+drop procedure SP_EditarEst
+
+
+--Eliminar estudiante
+
+CREATE PROCEDURE sp_elimiarEstudiante(@MatriculaEst varchar(12))
+as
+ delete from dbo.Estudiante where matricula= @MatriculaEst;
+
+ --drop proc sp_elimiarEstudiante
+
+
+ insert into AlgoritmoBasico(titulo,problema)
+values
+('Problema 3', 'Escribir un programa que lea n números enteros y calcule la cantidad de valores mayores o iguales a 1000.
+Este tipo de problemas también se puede resolver empleando la estructura repetitiva for. Lo primero que se hace es cargar una variable que indique la cantidad de valores a ingresar. Dicha variable se carga antes de entrar a la estructura repetitiva for.
+La estructura for permite que el valor inicial o final dependa de una variable cargada previamente por teclado.
+'),
+('Problema 4', 'Desarrollar un programa que solicite la carga de 10 números e imprima la suma de los últimos 5 valores ingresados.
+')
+
+
+
+--Listar Algoritmos
+CREATE PROCEDURE SP_listarAlgoritmosBasicos
+AS
+ SELECT * FROM dbo.AlgoritmoBasico;
+
+
+ insert into dbo.AlgoritmoIntermedio(titulo,problema)
+values
+('Problema 3', 'Escribir un programa que lea n números enteros y calcule la cantidad de valores mayores o iguales a 1000.
+Este tipo de problemas también se puede resolver empleando la estructura repetitiva for. Lo primero que se hace es cargar una variable que indique la cantidad de valores a ingresar. Dicha variable se carga antes de entrar a la estructura repetitiva for.
+La estructura for permite que el valor inicial o final dependa de una variable cargada previamente por teclado.
+'),
+('Problema 4', 'Desarrollar un programa que solicite la carga de 10 números e imprima la suma de los últimos 5 valores ingresados.
+'),
+('Problema 5', 'Desarrollar un programa que muestre la tabla de multiplicar del 5 (del 5 al 50)
+')
+
+--procedimientos almacenados para algoritmo intermedio
+
+
+Create procedure SP_listarAlgoritmosintermedio
+as
+select * from dbo.AlgoritmoIntermedio
+
+exec SP_listarAlgoritmosintermedio;
+
+---crear
+
+Create procedure SP_CrearAlgoritmoIntermedio(
+	@titulo varchar(150),
+	@problema text
+	)
+as
+	insert into dbo.AlgoritmoIntermedio values( @titulo,@problema);
+
+	-- editar
+	Create procedure SP_ActualizarAlgoritmoIntermedio(
+	@id int,
+	@titulo varchar(150),
+	@problema text
+	)
+as
+	update dbo.AlgoritmoIntermedio set titulo= @titulo, problema= @problema where idAlgoritmo = @id ;
+
+	-- Eliminar
+
+		CREATE procedure SP_EliminarAlgoritmoIntermedio (@id int)
+		as
+		DELETE FROM dbo.AlgoritmoIntermedio where idAlgoritmo =@id
+
+
+
+-- algoritmo Basico
+

@@ -64,7 +64,7 @@ namespace capaNegocio
             {
                 numSelected = Randomrand.Next(0, listaAlgoritmos.Count);
                 seleccionado = listaAlgoritmos[numSelected];
-                MessageBox.Show(seleccionado);
+                //MessageBox.Show(seleccionado);
             }
             catch (Exception ex)
             {

@@ -46,14 +46,15 @@ namespace capaDatos
 
             public DataTable cantidadAlgoritmo()
             {
-               // int cantidad = 0;
-                SqlCommand cmd = new SqlCommand("SP_listarAlgoritmosBasicos", conn);
-                cmd.CommandType = CommandType.StoredProcedure;               
-                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+            // int cantidad = 0;
+                  SqlCommand cmd = new SqlCommand("SP_listarAlgoritmosBasicos", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                return dt;
+                    return dt;
+
 
             }
 
@@ -111,16 +112,21 @@ namespace capaDatos
 
         public void CD_ActualizarAlgoritmo(CEalgoritmo algot)
         {
-            SqlCommand cmd = new SqlCommand("SP_ActualizarAlgoritmo", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@titulo", algot.titulo);
-            cmd.Parameters.AddWithValue("@problem", algot.problema);
-            cmd.Parameters.AddWithValue("@matric", algot.matricula);
-            cmd.Parameters.AddWithValue("@comples", algot.complejidad);
-            if (conn.State == ConnectionState.Open) conn.Close();
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SP_ActualizarAlgoritmo", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@titulo", algot.titulo);
+                cmd.Parameters.AddWithValue("@problem", algot.problema);
+                cmd.Parameters.AddWithValue("@matric", algot.matricula);
+                cmd.Parameters.AddWithValue("@comples", algot.complejidad);
+                if (conn.State == ConnectionState.Open) conn.Close();
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
+           
 
 
         }
@@ -131,13 +137,23 @@ namespace capaDatos
 
         public void CD_EliminarAlgoritmo(int id)
         {
-            SqlCommand cmd = new SqlCommand("SP_EliminarAlgoritmo");
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@idAlgBasico", id);
-            if(conn.State== ConnectionState.Open) conn.Close();
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SP_EliminarAlgoritmo");
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@idAlgBasico", id);
+                if (conn.State == ConnectionState.Open) conn.Close();
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch(Exception ex) { 
+                MessageBox.Show(ex.Message);
+
+            
+            }
+            
         }
 
 

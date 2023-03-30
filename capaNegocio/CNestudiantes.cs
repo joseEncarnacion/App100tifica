@@ -57,7 +57,7 @@ namespace capaNegocio
             datoEstudiante.ActualizarDatos(est);
         }
 
-        public void NEestudiante_Eliminar(int id)
+        public void NEestudiante_Eliminar(string id)
         {
             datoEstudiante.Datos_Eliminar(id);
         }

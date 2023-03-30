@@ -226,9 +226,22 @@
             this.cBoxCarrera.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cBoxCarrera.FormattingEnabled = true;
             this.cBoxCarrera.Items.AddRange(new object[] {
-            "Software",
-            "Multimedia",
-            "Mecatronica"});
+            "DESARROLLO DE SOFTWARE",
+            "ANALÍTICA Y CIENCIA DE LOS DATOS",
+            "SEGURIDAD INFORMÁTICA",
+            "MULTIMEDIA",
+            "DISEÑO INDUSTRIAL",
+            "SONIDO",
+            "MECATRÓNICA",
+            "INTELIGENCIA ARTIFICIAL",
+            "SIMULACIONES INTERACTIVAS Y VIDEOJUEGOS",
+            "TELECOMUNICACIONES",
+            "INFORMÁTICA FORENSE",
+            "ENERGÍAS RENOVABLES",
+            "REDES DE INFORMACIÓN",
+            "MANUFACTURA AUTOMATIZADA",
+            "MANUFACTURA DE DISPOSITIVOS MÉDICOS",
+            "OTRA"});
             this.cBoxCarrera.Location = new System.Drawing.Point(346, 740);
             this.cBoxCarrera.Name = "cBoxCarrera";
             this.cBoxCarrera.Size = new System.Drawing.Size(551, 36);

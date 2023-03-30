@@ -156,3 +156,33 @@ as
 
 -- algoritmo Basico
 
+
+
+---------------------- tablas faltantes algoritmo basico y intermedio 
+
+
+ 
+CREATE TABLE dbo.AlgoritmoBasico(
+	idAlgoritmo int not null primary key identity,
+	titulo varchar(150) not null,
+	problema text
+
+);
+go
+CREATE TABLE dbo.AlgoritmoIntermedio(
+	idAlgoritmo int not null primary key identity,
+	titulo varchar(150) not null,
+	problema text
+);
+
+
+
+--busqueda por termino procedimiento almacenado
+
+	CREATE PROCEDURE SP_buscarUnAlgoritmoBasico(
+	@idalgot int)
+AS
+	SELECT * FROM dbo.AlgoritmoBasico where idAlgoritmo = @idalgot
+
+
+

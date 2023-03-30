@@ -107,12 +107,22 @@ namespace capaPresentacion
             listarEstudiantes();
         }
 
+
+
+        //Listar algoritmo basico
+
+        private void ListarAlgBasico()
+        {
+            DataTable dt = algoritmos.CN_countAlgoritmo();
+            dataGalgotBasico.DataSource = dt;
+        }
+
         private void panelMantAlgtBasico_Paint(object sender, PaintEventArgs e)
         {
             //trael registros alg basico
+            ListarAlgBasico();
 
-            DataTable dt = algoritmos.CN_countAlgoritmo();
-            dataGalgotBasico.DataSource = dt;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -120,12 +130,27 @@ namespace capaPresentacion
             //guardar algoritmo intermedio
         }
 
+
+
+        // Listar algoritmo medio
+
+        private void ListarAlgoritmoMedio()
+        {
+            DataTable dt = NalgotIntermedio.CNlistarAlgotMed();
+            dataGintermedio.DataSource = dt;
+        }
+
+
+
+
         private void panelalgtIntermedio_Paint(object sender, PaintEventArgs e)
         {
             //Taer algoritmo medio
 
-            DataTable dt = NalgotIntermedio.CNlistarAlgotMed();
-            dataGintermedio.DataSource= dt;
+            ListarAlgoritmoMedio();
+
+
+
 
         }
 
@@ -153,13 +178,22 @@ namespace capaPresentacion
 
         }
 
+
+        // eventos relacionado a estudiante
+
         private void dataGEstudiantes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //try catch
 
+            
             if (e.RowIndex == 0) { return; }
             if (dataGEstudiantes.Rows[e.RowIndex].Cells["eliminar"].Selected)
             {
-                int Eliminar = Convert.ToInt32(dataGEstudiantes.Rows[e.RowIndex].Cells["matricula"].Value.ToString());
+                string Eliminar = string.Empty;
+
+                Eliminar = dataGEstudiantes.Rows[e.RowIndex].Cells["matricula"].Value.ToString();
+
+               // int Eliminar = Convert.ToInt32(dataGEstudiantes.Rows[e.RowIndex].Cells["matricula"].Value.ToString());
                 //metodo eliminar
                 estudiantes.NEestudiante_Eliminar(Eliminar);
 
@@ -204,7 +238,14 @@ namespace capaPresentacion
             
                 algoritmos.CN_EliminarRegistro(Eliminar);
                 //falta el metodo listar algoritmo
-                
+                ListarAlgoritmoMedio();
+
+            }
+            else if (dataGalgotBasico.Rows[e.RowIndex].Cells["editar"].Selected)
+            {
+                textcodeMed.Text = dataGalgotBasico.Rows[e.RowIndex].Cells["idAlgoritmo"].Value.ToString();
+                txttituloIntermedio.Text = dataGalgotBasico.Rows[e.RowIndex].Cells["titulo"].Value.ToString();
+                txtProbIntermedio.Text = dataGalgotBasico.Rows[e.RowIndex].Cells["problema"].Value.ToString();
             }
 
 

@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_regresarP1 = new System.Windows.Forms.Button();
@@ -45,6 +45,11 @@
             this.panelMantAlgtBasico = new System.Windows.Forms.Panel();
             this.panelalgtIntermedio = new System.Windows.Forms.Panel();
             this.dataGintermedio = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnIntermedioGruadar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -86,6 +91,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_algotIntermedio = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.textcodeMed = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textcodigoBasico = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panelAdmin1.SuspendLayout();
             this.panelMantAlgtBasico.SuspendLayout();
@@ -241,18 +250,67 @@
             // dataGintermedio
             // 
             this.dataGintermedio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGintermedio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewImageColumn3,
+            this.dataGridViewImageColumn4});
             this.dataGintermedio.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dataGintermedio.Location = new System.Drawing.Point(450, 96);
+            this.dataGintermedio.Location = new System.Drawing.Point(476, 96);
             this.dataGintermedio.Name = "dataGintermedio";
             this.dataGintermedio.RowHeadersWidth = 51;
             this.dataGintermedio.RowTemplate.Height = 29;
-            this.dataGintermedio.Size = new System.Drawing.Size(997, 488);
+            this.dataGintermedio.Size = new System.Drawing.Size(997, 588);
             this.dataGintermedio.TabIndex = 3;
             this.dataGintermedio.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGintermedio_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "idAlgoritmo";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "titulo";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Titulo";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "problema";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Algoritmo a solucionar";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewImageColumn3
+            // 
+            this.dataGridViewImageColumn3.HeaderText = "Eliminar";
+            this.dataGridViewImageColumn3.Image = global::capaPresentacion.Properties.Resources.hombre;
+            this.dataGridViewImageColumn3.MinimumWidth = 6;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            this.dataGridViewImageColumn3.Width = 125;
+            // 
+            // dataGridViewImageColumn4
+            // 
+            this.dataGridViewImageColumn4.HeaderText = "Editar";
+            this.dataGridViewImageColumn4.Image = global::capaPresentacion.Properties.Resources.usuario;
+            this.dataGridViewImageColumn4.MinimumWidth = 6;
+            this.dataGridViewImageColumn4.Name = "dataGridViewImageColumn4";
+            this.dataGridViewImageColumn4.Width = 125;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.LightBlue;
+            this.panel5.Controls.Add(this.textcodeMed);
+            this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.btnIntermedioGruadar);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.txttituloIntermedio);
@@ -260,13 +318,13 @@
             this.panel5.Controls.Add(this.label10);
             this.panel5.Location = new System.Drawing.Point(74, 96);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(362, 488);
+            this.panel5.Size = new System.Drawing.Size(362, 591);
             this.panel5.TabIndex = 2;
             // 
             // btnIntermedioGruadar
             // 
             this.btnIntermedioGruadar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.btnIntermedioGruadar.Location = new System.Drawing.Point(36, 425);
+            this.btnIntermedioGruadar.Location = new System.Drawing.Point(36, 509);
             this.btnIntermedioGruadar.Name = "btnIntermedioGruadar";
             this.btnIntermedioGruadar.Size = new System.Drawing.Size(280, 48);
             this.btnIntermedioGruadar.TabIndex = 4;
@@ -278,7 +336,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(36, 171);
+            this.label9.Location = new System.Drawing.Point(38, 245);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 28);
             this.label9.TabIndex = 3;
@@ -286,14 +344,14 @@
             // 
             // txttituloIntermedio
             // 
-            this.txttituloIntermedio.Location = new System.Drawing.Point(36, 109);
+            this.txttituloIntermedio.Location = new System.Drawing.Point(38, 199);
             this.txttituloIntermedio.Name = "txttituloIntermedio";
             this.txttituloIntermedio.Size = new System.Drawing.Size(284, 34);
             this.txttituloIntermedio.TabIndex = 2;
             // 
             // txtProbIntermedio
             // 
-            this.txtProbIntermedio.Location = new System.Drawing.Point(36, 215);
+            this.txtProbIntermedio.Location = new System.Drawing.Point(36, 303);
             this.txtProbIntermedio.Multiline = true;
             this.txtProbIntermedio.Name = "txtProbIntermedio";
             this.txtProbIntermedio.Size = new System.Drawing.Size(284, 183);
@@ -303,7 +361,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(36, 61);
+            this.label10.Location = new System.Drawing.Point(36, 151);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(68, 28);
             this.label10.TabIndex = 0;
@@ -312,6 +370,8 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.LightBlue;
+            this.panel3.Controls.Add(this.textcodigoBasico);
+            this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.bntGuardar);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.txtmantTitulo);
@@ -319,14 +379,14 @@
             this.panel3.Controls.Add(this.label7);
             this.panel3.Location = new System.Drawing.Point(49, 111);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(362, 488);
+            this.panel3.Size = new System.Drawing.Size(362, 596);
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // bntGuardar
             // 
             this.bntGuardar.BackColor = System.Drawing.Color.MidnightBlue;
-            this.bntGuardar.Location = new System.Drawing.Point(36, 425);
+            this.bntGuardar.Location = new System.Drawing.Point(34, 525);
             this.bntGuardar.Name = "bntGuardar";
             this.bntGuardar.Size = new System.Drawing.Size(280, 48);
             this.bntGuardar.TabIndex = 4;
@@ -338,7 +398,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(36, 171);
+            this.label8.Location = new System.Drawing.Point(34, 271);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 28);
             this.label8.TabIndex = 3;
@@ -346,14 +406,14 @@
             // 
             // txtmantTitulo
             // 
-            this.txtmantTitulo.Location = new System.Drawing.Point(36, 109);
+            this.txtmantTitulo.Location = new System.Drawing.Point(34, 209);
             this.txtmantTitulo.Name = "txtmantTitulo";
             this.txtmantTitulo.Size = new System.Drawing.Size(284, 34);
             this.txtmantTitulo.TabIndex = 2;
             // 
             // txtmantproblema
             // 
-            this.txtmantproblema.Location = new System.Drawing.Point(36, 215);
+            this.txtmantproblema.Location = new System.Drawing.Point(34, 315);
             this.txtmantproblema.Multiline = true;
             this.txtmantproblema.Name = "txtmantproblema";
             this.txtmantproblema.Size = new System.Drawing.Size(276, 183);
@@ -363,7 +423,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(36, 61);
+            this.label7.Location = new System.Drawing.Point(34, 161);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 28);
             this.label7.TabIndex = 0;
@@ -371,20 +431,20 @@
             // 
             // dataGalgotBasico
             // 
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGalgotBasico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGalgotBasico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGalgotBasico.BackgroundColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGalgotBasico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGalgotBasico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGalgotBasico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGalgotBasico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idAlgoritmo,
@@ -392,14 +452,14 @@
             this.problema,
             this.dataGridViewImageColumn1,
             this.dataGridViewImageColumn2});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGalgotBasico.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGalgotBasico.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataGalgotBasico.Location = new System.Drawing.Point(457, 111);
             this.dataGalgotBasico.Name = "dataGalgotBasico";
             this.dataGalgotBasico.RowHeadersWidth = 51;
@@ -454,9 +514,9 @@
             // 
             // dataGEstudiantes
             // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            this.dataGEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.dataGEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGEstudiantes.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -685,6 +745,40 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
             // 
+            // textcodeMed
+            // 
+            this.textcodeMed.Location = new System.Drawing.Point(38, 99);
+            this.textcodeMed.Name = "textcodeMed";
+            this.textcodeMed.Size = new System.Drawing.Size(284, 34);
+            this.textcodeMed.TabIndex = 6;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(38, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 28);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Codigo";
+            // 
+            // textcodigoBasico
+            // 
+            this.textcodigoBasico.Location = new System.Drawing.Point(34, 109);
+            this.textcodigoBasico.Name = "textcodigoBasico";
+            this.textcodigoBasico.Size = new System.Drawing.Size(284, 34);
+            this.textcodigoBasico.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(34, 61);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(33, 28);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "ID";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 28F);
@@ -777,5 +871,14 @@
         private TextBox txtmantproblema;
         private Label label7;
         private DataGridView dataGintermedio;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewImageColumn dataGridViewImageColumn3;
+        private DataGridViewImageColumn dataGridViewImageColumn4;
+        private TextBox textcodeMed;
+        private Label label11;
+        private TextBox textcodigoBasico;
+        private Label label12;
     }
 }

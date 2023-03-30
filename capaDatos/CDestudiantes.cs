@@ -39,7 +39,7 @@ namespace capaDatos
         }
 
         //Eliminar registro en la base de datos
-        public void Datos_Eliminar(int id)
+        public void Datos_Eliminar(string id)
         {
             SqlCommand cmd = new SqlCommand("sp_elimiarEstudiante", conn);
             cmd.CommandType = CommandType.StoredProcedure;

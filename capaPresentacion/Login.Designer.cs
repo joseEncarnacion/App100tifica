@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_regresarP1 = new System.Windows.Forms.Button();
@@ -51,12 +51,16 @@
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn4 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.textcodeMed = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnIntermedioGruadar = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.txttituloIntermedio = new System.Windows.Forms.TextBox();
             this.txtProbIntermedio = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textcodigoBasico = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.bntGuardar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.txtmantTitulo = new System.Windows.Forms.TextBox();
@@ -91,10 +95,8 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_algotIntermedio = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.textcodeMed = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textcodigoBasico = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Mant_irInicio = new System.Windows.Forms.ToolStripButton();
             this.panel1.SuspendLayout();
             this.panelAdmin1.SuspendLayout();
             this.panelMantAlgtBasico.SuspendLayout();
@@ -214,6 +216,7 @@
             this.panelAdmin1.Controls.Add(this.dataGEstudiantes);
             this.panelAdmin1.Controls.Add(this.panel2);
             this.panelAdmin1.Controls.Add(this.toolStrip1);
+            this.panelAdmin1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelAdmin1.Location = new System.Drawing.Point(0, 0);
             this.panelAdmin1.Margin = new System.Windows.Forms.Padding(4);
             this.panelAdmin1.Name = "panelAdmin1";
@@ -321,6 +324,23 @@
             this.panel5.Size = new System.Drawing.Size(362, 591);
             this.panel5.TabIndex = 2;
             // 
+            // textcodeMed
+            // 
+            this.textcodeMed.Location = new System.Drawing.Point(38, 99);
+            this.textcodeMed.Name = "textcodeMed";
+            this.textcodeMed.Size = new System.Drawing.Size(284, 34);
+            this.textcodeMed.TabIndex = 6;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(38, 48);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(78, 28);
+            this.label11.TabIndex = 5;
+            this.label11.Text = "Codigo";
+            // 
             // btnIntermedioGruadar
             // 
             this.btnIntermedioGruadar.BackColor = System.Drawing.Color.MidnightBlue;
@@ -383,6 +403,23 @@
             this.panel3.TabIndex = 1;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
+            // textcodigoBasico
+            // 
+            this.textcodigoBasico.Location = new System.Drawing.Point(34, 109);
+            this.textcodigoBasico.Name = "textcodigoBasico";
+            this.textcodigoBasico.Size = new System.Drawing.Size(284, 34);
+            this.textcodigoBasico.TabIndex = 6;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(34, 61);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(33, 28);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "ID";
+            // 
             // bntGuardar
             // 
             this.bntGuardar.BackColor = System.Drawing.Color.MidnightBlue;
@@ -431,20 +468,20 @@
             // 
             // dataGalgotBasico
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGalgotBasico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGalgotBasico.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGalgotBasico.BackgroundColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGalgotBasico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGalgotBasico.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGalgotBasico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGalgotBasico.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idAlgoritmo,
@@ -452,14 +489,14 @@
             this.problema,
             this.dataGridViewImageColumn1,
             this.dataGridViewImageColumn2});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGalgotBasico.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGalgotBasico.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGalgotBasico.Location = new System.Drawing.Point(457, 111);
             this.dataGalgotBasico.Name = "dataGalgotBasico";
             this.dataGalgotBasico.RowHeadersWidth = 51;
@@ -514,9 +551,9 @@
             // 
             // dataGEstudiantes
             // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.dataGEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            this.dataGEstudiantes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGEstudiantes.BackgroundColor = System.Drawing.Color.MidnightBlue;
             this.dataGEstudiantes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGEstudiantes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -668,7 +705,9 @@
             this.btn_algotBasico,
             this.toolStripSeparator1,
             this.btn_algotIntermedio,
-            this.toolStripSeparator2});
+            this.toolStripSeparator2,
+            this.toolStripSeparator5,
+            this.btn_Mant_irInicio});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1509, 35);
@@ -745,39 +784,23 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 35);
             // 
-            // textcodeMed
+            // toolStripSeparator5
             // 
-            this.textcodeMed.Location = new System.Drawing.Point(38, 99);
-            this.textcodeMed.Name = "textcodeMed";
-            this.textcodeMed.Size = new System.Drawing.Size(284, 34);
-            this.textcodeMed.TabIndex = 6;
+            this.toolStripSeparator5.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(6, 35);
             // 
-            // label11
+            // btn_Mant_irInicio
             // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(38, 48);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 28);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "Codigo";
-            // 
-            // textcodigoBasico
-            // 
-            this.textcodigoBasico.Location = new System.Drawing.Point(34, 109);
-            this.textcodigoBasico.Name = "textcodigoBasico";
-            this.textcodigoBasico.Size = new System.Drawing.Size(284, 34);
-            this.textcodigoBasico.TabIndex = 6;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(34, 61);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(33, 28);
-            this.label12.TabIndex = 5;
-            this.label12.Text = "ID";
+            this.btn_Mant_irInicio.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_Mant_irInicio.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btn_Mant_irInicio.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_Mant_irInicio.ForeColor = System.Drawing.Color.Black;
+            this.btn_Mant_irInicio.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Mant_irInicio.Name = "btn_Mant_irInicio";
+            this.btn_Mant_irInicio.Size = new System.Drawing.Size(147, 32);
+            this.btn_Mant_irInicio.Text = "Volver al Inicio";
+            this.btn_Mant_irInicio.Click += new System.EventHandler(this.btn_Mant_irInicio_Click);
             // 
             // Login
             // 
@@ -880,5 +903,7 @@
         private Label label11;
         private TextBox textcodigoBasico;
         private Label label12;
+        private ToolStripSeparator toolStripSeparator5;
+        private ToolStripButton btn_Mant_irInicio;
     }
 }

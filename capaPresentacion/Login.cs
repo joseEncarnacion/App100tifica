@@ -26,6 +26,62 @@ namespace capaPresentacion
         CEalgoritmo EntidadAlgortimo   = new CEalgoritmo();
         CNalgoritmoIntermedio NalgotIntermedio = new CNalgoritmoIntermedio();
 
+        //Login
+        UsuarioMant UsuarioEntidad = new UsuarioMant();
+        CNusuario usuarioNeg = new CNusuario();
+
+
+
+
+        //metodo Usuario
+
+        private void login()
+        {
+            bool respuesta;
+            DataTable dt;
+            string userAuth;
+            string passAuth;
+
+            UsuarioEntidad.UsuarioE = textUser.Text;
+            UsuarioEntidad.passE = textPasword.Text;
+
+            respuesta = usuarioNeg.validarUsuario(UsuarioEntidad);
+
+            if (respuesta == false)
+            {
+
+                return;
+            }
+
+            dt = usuarioNeg.NEBuscarUsuario(UsuarioEntidad);
+
+            //dataGridView1.DataSource = dt;
+
+            if (dt.Rows.Count == 0)
+            {
+                MessageBox.Show("ususario no existe");
+                textPasword.Text = string.Empty;
+                return;
+
+            }
+            else
+            {
+                userAuth = dt.Rows[0]["Usuario"].ToString();
+                passAuth = dt.Rows[0]["passw"].ToString();
+
+                if (textUser.Text == userAuth && textPasword.Text == passAuth)
+                {
+
+                    panelAdmin1.Visible = true;
+                   
+
+                }
+            }
+
+
+        }
+
+
         private void limpiarInputEst()
         {
             txtMantCarreraCBOX.Text = string.Empty;
@@ -51,9 +107,12 @@ namespace capaPresentacion
 
         }
 
+
+        //boton para aceder
         private void btn_login_Click(object sender, EventArgs e)
         {
             panelAdmin1.Visible = true;
+            //login();
         }
 
         private void btn_regresarP1_Click(object sender, EventArgs e)
@@ -251,9 +310,18 @@ namespace capaPresentacion
 
         }
 
+
         private void dataGintermedio_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             
+        }
+
+        private void btn_Mant_irInicio_Click(object sender, EventArgs e)
+        {
+            Pantalla1 p1Inicio = new Pantalla1();
+
+            p1Inicio.Show();
+            this.Hide();    
         }
     }
 }
